@@ -1,18 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
-import MainScreen from "./MainComponents/MainScreen";
-import InformationBlock from "./ContentComponents/InformationBlock";
-import CatalogBlock from "./ContentComponents/CatalogBlock";
 
 function App() {
   return (
     <div className="App">
-        <MainScreen/>
-        <InformationBlock
-            title={'Что такое Battlecodes'}
-            descFirstPart={'инфаинфаинфаинфаинфаинфаинфаинфа'}
-            descSecondPart={'Оттачивай свои навыки в программировании и прокачивай алгоритмическое мышление.'}/>
-        <CatalogBlock/>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }

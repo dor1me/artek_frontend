@@ -1,27 +1,17 @@
-@font-face {
-  font-family: "MontExtralight";
-  src: url("/public/source/fonts/mont-extralight.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
+.App {
+  text-align: center;
 }
 
-@font-face {
-  font-family: "MontHeavy";
-  src: url("/public/source/fonts/mont-heavy.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-@font-face {
-  font-family: "MontSemiBold";
-  src: url("/public/source/fonts/mont-semibold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
-
-/*.App {*/
-/*  text-align: center;*/
-/*}*/
 
 .App-header {
   background-color: #282c34;
