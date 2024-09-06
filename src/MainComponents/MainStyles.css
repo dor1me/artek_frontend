@@ -1,0 +1,22 @@
+:root {
+
+}
+
+.header {
+    display: flex;
+    color: red;
+}
+
+.header ul {
+    display: flex;
+}
+
+.header li {
+    margin-right: 30px;
+    list-style: none;
+}
+
+/*.header ul:last-child {*/
+/*    margin-right: 0px;*/
+/*}*/
+

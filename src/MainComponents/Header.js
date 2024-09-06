@@ -1,27 +1,29 @@
 import React from 'react'
+import './MainStyles.css'
+// import {Logo} from 'Logo'
 
 const Header = () => {
     return (
-        <div className={'header'}>
-            {/*<logo></logo>*/}
-            <ul>
+        <header className={'header'}>
+            {/*<Logo/>*/}
+            <ul className={'header-list'}>
                 <li>
-                    <a src={'/'}>
-                        ссылка раз
+                    <a>
+                        <span>первая ссылка</span>
                     </a>
                 </li>
                 <li>
-                    <a src={'/'}>
-                        ссылка два
+                    <a>
+                        <span>вторая ссылка</span>
                     </a>
                 </li>
                 <li>
-                    <a src={'/'}>
-                        ссылка три
+                    <a>
+                        <span>третья ссылка</span>
                     </a>
                 </li>
             </ul>
-        </div>
+            </header>
     )
 }
 
