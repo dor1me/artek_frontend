@@ -1,8 +1,15 @@
 import React from 'react'
-import TeamCarouselItemPhoto from "./TeamCarouselItemPhoto";
+import TeamCarouselItem from "./TeamCarouselItem";
 import './TeamCarouselStyles.css';
 
 const TeamCarousel = () => {
+
+    const teamInfo = {
+        Olesya: {
+            name: 'Олеся Казакова',
+            profession: 'Монтажер'
+        }
+    }
 
     return (
         <div className="wrap">
@@ -21,16 +28,16 @@ const TeamCarousel = () => {
                 </div>
                 <div aria-hidden="true" className="items marquee">
                     <div className="item">
-                        <TeamCarouselItemPhoto member={'alica'} profession={'animator'}/>
+                        <TeamCarouselItem props={teamInfo.Olesya}/>
                     </div>
                     <div className="item">
-                        <TeamCarouselItemPhoto member={'katya'} profession={'animator'}/>
+                        <TeamCarouselItem props={teamInfo.Olesya}/>
                     </div>
                     <div className="item">
-                        <TeamCarouselItemPhoto member={'dima'} profession={'animator'}/>
+                        <TeamCarouselItem props={teamInfo.Olesya}/>
                     </div>
                     <div className="item">
-                        <TeamCarouselItemPhoto member={'nikita'} profession={'animator'}/>
+                        <TeamCarouselItem props={teamInfo.Olesya}/>
                     </div>
                     <div className={'item'}/>
                     <div className={'item'}/>
