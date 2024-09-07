@@ -1,7 +1,6 @@
 import React from 'react'
-import TeamCarouselPhoto from "./TeamCarouselDescription";
 
-const TeamCarouselItemPhoto = ({name, profession}) => {
+const TeamCarouselItemPhoto = ({name}) => {
 
     const memberPhoto = `./source/member_photos/photo_${name}.png`
     return (
