@@ -1,5 +1,6 @@
 import React from 'react'
-import TeamCarouselItem from "./TeamCarouselItem";
+import TeamCarouselItemPhoto from "./TeamCarouselItemPhoto";
+import './TeamCarouselStyles.css';
 
 const TeamCarousel = () => {
 
@@ -20,16 +21,16 @@ const TeamCarousel = () => {
                 </div>
                 <div aria-hidden="true" className="items marquee">
                     <div className="item">
-                        <TeamCarouselItem member={'alica'} profession={'animator'}/>
+                        <TeamCarouselItemPhoto member={'alica'} profession={'animator'}/>
                     </div>
                     <div className="item">
-                        <TeamCarouselItem member={'katya'} profession={'animator'}/>
+                        <TeamCarouselItemPhoto member={'katya'} profession={'animator'}/>
                     </div>
                     <div className="item">
-                        <TeamCarouselItem member={'dima'} profession={'animator'}/>
+                        <TeamCarouselItemPhoto member={'dima'} profession={'animator'}/>
                     </div>
                     <div className="item">
-                        <TeamCarouselItem member={'nikita'} profession={'animator'}/>
+                        <TeamCarouselItemPhoto member={'nikita'} profession={'animator'}/>
                     </div>
                     <div className={'item'}/>
                     <div className={'item'}/>
