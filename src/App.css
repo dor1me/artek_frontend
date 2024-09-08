@@ -1,3 +1,59 @@
+:root {
+  /*background*/
+  /*black*/
+  --black-100: rgba(0, 19, 48, 0.04);
+  --black-200: rgba(0, 19, 48, 0.09);
+  --black-300: rgba(0, 19, 48, 0.15);
+  --black-400: rgba(0, 19, 48, 0.36);
+  --black-500: rgba(0, 19, 48, 0.69);
+  --black-600: rgba(0, 19, 48, 0.88);
+  --black-700: rgba(0, 14, 56, 1);
+  --black-800: rgba(0, 19, 48, 1);
+
+  /*white*/
+  --white-100: rgba(255, 255, 255, 0.06);
+  --white-200: rgba(255, 255, 255, 0.09);
+  --white-300: rgba(255, 255, 255, 0.15);
+  --white-400: rgba(255, 255, 255, 0.36);
+  --white-500: rgba(255, 255, 255, 0.69);
+  --white-600: rgba(255, 255, 255, 0.88);
+  --white-700: rgba(255, 255, 255, 1);
+
+  /*orange*/
+  --orange-100: rgba(232, 87, 58, 0.06);
+  --orange-200: rgba(232, 87, 58, 0.09);
+  --orange-300: rgba(232, 87, 58, 0.16);
+  --orange-400: rgba(232, 87, 58, 0.36);
+  --orange-500: rgba(232, 87, 58, 0.69);
+  --orange-600: rgba(232, 87, 58, 0.88);
+  --orange-700: rgba(232, 87, 58, 1);
+  --orange-800: rgba(207, 77, 52, 1);
+  --orange-900: rgba(207, 60, 31, 1);
+
+
+  --bg-primary: var(--black-100);
+  --bg-primary-hover: var(--black-200);
+  --bg-disabled: var(--black-400);
+  --bg-color: var(--black-700);
+  --bg-color-hover: var(--black-800);
+  --color-inverse: rgba(255, 255, 255, 1);
+
+  /*fg*/
+  --fg-primary: var(--black-800);
+  --fg-secondary: var(--black-500);
+  --fg-disabled: var(--black-400);
+  --fg-primary-inverse: var(--white-700);
+  --fg-secondary-on-color: var(--white-500);
+  --fg-primary-on-color: var(--white-700);
+  --fg-orange-primary: var(--orange-800);
+
+  /*stroke*/
+  --stroke-primary: var(--white-300);
+  --stroke-secondary: var(--white-200);
+  --stroke-white: var(--white-700);
+}
+
+
 .App {
   text-align: center;
 }
