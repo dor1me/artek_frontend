@@ -1,11 +1,11 @@
 import React from 'react'
 import './MainStyles.css'
-// import {Logo} from 'Logo'
+import {Logo} from './Logo'
 
 const Header = () => {
     return (
         <header className={'header'}>
-            {/*<Logo/>*/}
+            <Logo className={'logo'}/>
             <ul className={'header-list'}>
                 <li>
                     <a>
