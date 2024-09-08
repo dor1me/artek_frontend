@@ -4,14 +4,15 @@ import Carousel from "./TeamComponents/TeamCarousel";
 import TeamCarousel from "./TeamComponents/TeamCarousel";
 import UnityGame from "./Games/Game_1";
 import MediaPlayer from "./MediaPlayerCompinents/MediaPlayer";
+import Parallax from "./MainComponents/Parallax";
 
 function App() {
   return (
     <div className="App">
       <MainScreen/>
       <TeamCarousel/>
+        <Parallax/>
       {/*<UnityGame/>*/}
-        <MediaPlayer/>
     </div>
   );
 }

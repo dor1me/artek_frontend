@@ -20,3 +20,82 @@
 /*    margin-right: 0px;*/
 /*}*/
 
+:root {
+    --white: #ffffff;
+    --dark-blue: #2d2d44;
+    --green: #4eb543;
+    --orange: #e84e1b;
+
+    --main-font: 'Lato', sans-serif;
+    --trans: 0.135s ease-in-out;
+}
+
+/* not parallax styles */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--white);
+    background-color: var(--dark-blue);
+    font-family: var(--main-font)
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 5rem;
+
+    display: grid;
+    place-items: center;
+}
+
+.button {
+    display: grid;
+    place-items: center;
+
+    font: var(--main-font);
+    color: var(--white);
+    font-size: 20px;
+    background-color: var(--green);
+    border: 0;
+    border-radius: 4px;
+    min-height: 48px;
+    cursor: pointer;
+    transition: background-color var(--trans);
+}
+
+.title {
+    margin: 0;
+    margin-bottom: 2.5rem;
+    font-size: 48px;
+}
+
+.circle {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--orange);
+}
+
+
+   .parallax {
+       width: 50%;
+       padding: 5rem;
+       min-height: 10rem;
+       position: relative;
+       overflow: hidden;
+
+       border: 1px solid var(--green);
+       border-radius: 5px;
+   }
+
+.parallax__layer {
+    transition: transform 0.3s linear;
+}
+
