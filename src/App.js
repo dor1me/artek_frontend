@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="App">
       <MainScreen/>
-      <MapObject/>
-      {/*<UnityGame/>*/}
+      <MapObject object_name={'obed'}/>
+      <UnityGame/>
     </div>
   );
 }

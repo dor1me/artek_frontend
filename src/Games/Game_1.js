@@ -6,12 +6,12 @@ const UnityGame = () => {
     useEffect(() => {
         const loadUnity = () => {
             const script = document.createElement('script');
-            script.src = '../public/unity/magic-story.loader.js'; // Путь к loader.js
+            script.src = '../public/source/unity/magic-story.loader.js'; // Путь к loader.js
             script.onload = () => {
                 if (window.UnityLoader) {
                     window.UnityLoader.instantiate(
                         'unityContainer',
-                        '../public/unity/magic-story.loader.js' // Путь к .data.br файлу
+                        //'../public/unity/magic-story.loader.js' // Путь к .data.br файлу
                         // Удаляем параметр { onProgress: UnityProgress }
                     );
                 } else {

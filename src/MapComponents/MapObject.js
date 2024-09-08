@@ -2,8 +2,8 @@ import React, {useState} from 'react'
 
 const MapObject = ({object_name}) => {
     const[hover, setHover] = useState(false);
-    const HoverImage = `./public/source/object_images/${object_name}_outline.png`;
-    const UnhoverImage = `./public/source/object_images/${object_name}.png`;
+    const HoverImage = `/source/object_images/${object_name}_outline.jpg`;
+    const UnhoverImage = `/source/object_images/${object_name}.jpg`;
     const mapObjectImage = hover ? HoverImage : UnhoverImage;
 
     return (
