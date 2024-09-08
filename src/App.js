@@ -3,6 +3,7 @@ import MainScreen from "./MainComponents/MainScreen";
 import Carousel from "./TeamComponents/TeamCarousel";
 import TeamCarousel from "./TeamComponents/TeamCarousel";
 import UnityGame from "./Games/Game_1";
+import MediaPlayer from "./MediaPlayerCompinents/MediaPlayer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <MainScreen/>
       <TeamCarousel/>
       {/*<UnityGame/>*/}
+        <MediaPlayer/>
     </div>
   );
 }
