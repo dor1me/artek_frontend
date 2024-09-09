@@ -7,12 +7,13 @@ import MediaPlayer from "./MediaPlayerCompinents/MediaPlayer";
 import Parallax from "./MainComponents/Parallax";
 import MapObject from "./MapComponents/MapObject";
 import GamePlayer from "./MediaPlayerCompinents/GamePlayer";
+import Map from "./MapComponents/Map";
 
 function App() {
   return (
     <div className="App">
       <MainScreen/>
-      <MapObject object_name={'artek_arena'}/>
+        <Map/>
       {/*<UnityGame/>*/}
       <GamePlayer/>
     </div>
