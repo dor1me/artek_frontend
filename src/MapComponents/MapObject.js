@@ -16,13 +16,13 @@ const MapObject = ({objectName}) => {
     const mapObjectImage = hover ? hoverImage : unhoverImage;
 
     return (
-        <div
+        <span
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
         >
             <img src = {mapObjectImage} className={'map-object'}/>
             { hover && <Description name={objectInfo[objectName].name} description={objectInfo[objectName].description}/> }
-        </div>
+        </span>
     )
 
 }
