@@ -1,0 +1,38 @@
+.popup-container{
+    display: grid;
+    position: relative;
+    /*grid-template-columns: repeat(12, 1fr);*/
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    overflow: hidden;
+}
+
+.object-card {
+    grid-column: 1 / auto;
+    grid-row: 1;
+    position: relative;
+}
+
+.wave-1 {
+    grid-column: 1 / auto;
+    grid-row: 1;
+    position: relative;
+    left: -15%;
+    width: 115%;
+    height: 100%;
+    top: 6px;
+}
+
+.wave-2 {
+    grid-row: 1;
+    grid-column: 1 / auto;
+    z-index: -1;
+    position: relative;
+    left: 420px;
+    width: 130%;
+    height: 638px;
+    top: 120px;
+}

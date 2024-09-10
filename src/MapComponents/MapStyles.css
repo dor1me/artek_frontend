@@ -3,6 +3,25 @@
     height: 185px;
 }
 
-/*.map {*/
-/*    background-color: gray;*/
-/*}*/
+.map-container {
+    /*height: 1019px;*/
+    /*width: 1812px;*/
+    /*background-image: url('/public/source/object_images/map.png');*/
+
+    width: 100%;
+    /*height: 1019px;*/
+    margin: 0;
+}
+
+.map-container .back {
+    width: 120%;
+    height: 120%;
+    scale: 0.8;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+    left: -10%;
+}
+
+/*background: url('/public/source/object_images/map.png');*/
+/*lightgray 50% / coverno-repeat;*/
