@@ -16,9 +16,6 @@ function App() {
     <div className="App">
       <MainScreen/>
         <Map/>
-        {/*<ObjectPopupInfo objectName={'artek_arena'} className={'object-popup'}/>*/}
-      {/*<UnityGame/>*/}
-      {/*<GamePlayer/>*/}
     </div>
   );
 }

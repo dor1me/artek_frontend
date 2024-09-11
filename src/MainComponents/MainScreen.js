@@ -7,7 +7,6 @@ const MainScreen = () => {
     return (
         <div>
             <Header/>
-            <Parallax/>
         </div>
     )
 

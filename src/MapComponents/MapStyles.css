@@ -13,6 +13,7 @@
     width: 100%;
     /*height: 1019px;*/
     margin: 0;
+
 }
 
 .map-container .back {
@@ -23,6 +24,7 @@
     margin: 0;
     position: relative;
     left: -10%;
+    top: -150px;
 }
 
 /*background: url('/public/source/object_images/map.png');*/

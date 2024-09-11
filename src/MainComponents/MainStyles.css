@@ -15,7 +15,7 @@
 
 .header {
     gap: 110px;
-    margin: 20px 96px 1237px 96px;
+    margin: 20px 96px 20px 96px;
     font-size: 18px;
     font-weight: 500;
     color: var(--stroke-white, #FFF);
@@ -36,10 +36,6 @@
 
 .header-list {
     gap: 23px;
-}
-
-.header-container {
-
 }
 
 /*.header ul:last-child {*/
@@ -156,6 +152,7 @@ span {
     display: flex;
     align-items: center;
     gap: 12px;
+    margin-bottom: 10px;
 }
 
 .phone-number {
@@ -197,6 +194,7 @@ span {
     gap: 12px;
 }
 
-.phone-and-mail span {
-    gap: 4px;
+.phone-and-mail {
+    row-gap: 4px;
+    margin-top: 10px;
 }
