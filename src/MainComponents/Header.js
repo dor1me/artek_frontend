@@ -6,7 +6,9 @@ const Header = () => {
     return (
         <header className={'header'}>
             <span className={'logo-list'}>
-                <img src ='' className={'artek-logo'}/>
+                <img src = './source/logos/artek-logo.png' className={'artek-logo'}/>
+                <img src = './source/logos/vertical-stick.png' className={'stick-logo'}/>
+                <img src = './source/logos/edu-logo.png' className={'edu-logo'}/>
             </span>
             <ul className={'header-list'}>
                 <li>
