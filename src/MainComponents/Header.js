@@ -1,6 +1,7 @@
 import React from 'react'
 import './MainStyles.css'
 import {Logo} from './Logo'
+import HeaderContacts from "./HeaderContacts";
 
 const Header = () => {
     return (
@@ -38,7 +39,7 @@ const Header = () => {
                     </li>
                 </ul>
                 <span className={'contacts'}>
-                    <img src = './source/logos/contacts.png'/>
+                    <HeaderContacts/>
                 </span>
             </header>
         </div>

@@ -143,8 +143,16 @@ body {
     margin-left: 17px;
 }
 
+.stick-logo {
+    opacity: 0.5;
+}
+
 span {
     font-size: 18px;
     align-content: center;
 }
 
+.search-bling-icons{
+    gap: 12px;
+    display: inline-flex;
+}
