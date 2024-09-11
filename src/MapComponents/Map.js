@@ -6,9 +6,8 @@ const Map = () => {
     return (
         <div className = 'map-container'>
             <img className={'back'} src={'./source/object_images/map.png'}/>
-            <div className={'map'}>
-                <MapObject className={'artek-arena'} objectName={'artek_arena'}/>
-            </div>
+            <MapObject className={'artek-arena'} objectName={'artek_arena'}/>
+
         </div>
 
     )

@@ -1,11 +1,12 @@
 import React from 'react'
 
-const Description = ({name, description}) => {
+const Description = ({name, description, className}) => {
     return (
-        <div>
+        <span className={className}>
             <span>{name}</span>
-            <p>{description}</p>
-        </div>
+            <br/>
+            <span>{description}</span>
+        </span>
     )
 }
 

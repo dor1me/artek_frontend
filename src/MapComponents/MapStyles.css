@@ -1,6 +1,8 @@
 .map-object {
     width: 331px;
     height: 185px;
+    position: absolute;
+    /*top: 300px;*/
 }
 
 .map-container {
@@ -25,3 +27,24 @@
 
 /*background: url('/public/source/object_images/map.png');*/
 /*lightgray 50% / coverno-repeat;*/
+
+.artek-arena {
+    position: absolute;
+    z-index: 3;
+    top: 100px;
+    right: -400px;
+    scale: 0.09;
+}
+
+.description-card{
+    z-index: 4;
+    background-color: red;
+}
+
+.object-card {
+    background-color: blue;
+    position: fixed;
+    top: -550px;
+    right: -300px;
+    z-index: 3;
+}

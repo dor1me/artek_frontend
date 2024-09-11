@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './MapStyles.css';
 import Description from "./Description";
 
-const MapObject = ({objectName}) => {
+const MapObject = ({objectName, className}) => {
     const objectInfo = {
         artek_arena: {
             name: 'Артек-Арена',
@@ -20,8 +20,8 @@ const MapObject = ({objectName}) => {
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
         >
-            <img src = {mapObjectImage} className={'map-object'}/>
-            { hover && <Description name={objectInfo[objectName].name} description={objectInfo[objectName].description}/> }
+            <img src = {mapObjectImage} className={className}/>
+            {hover && <Description name={objectInfo[objectName].name} description={objectInfo[objectName].description} className={'object-card'}/> }
         </span>
     )
 

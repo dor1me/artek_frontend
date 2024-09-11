@@ -5,6 +5,7 @@
 .header {
     display: flex;
     color: red;
+    gap: 125px;
 }
 
 .header ul {

@@ -9,6 +9,7 @@ import MapObject from "./MapComponents/MapObject";
 import GamePlayer from "./MediaPlayerCompinents/GamePlayer";
 import Map from "./MapComponents/Map";
 import ObjectPopupInfo from "./ObjectInfoComponents/ObjectPopupInfo";
+import Description from "./MapComponents/Description";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         {/*<ObjectPopupInfo objectName={'artek_arena'} className={'object-popup'}/>*/}
       {/*<UnityGame/>*/}
       {/*<GamePlayer/>*/}
+      {/*  <Description name={'dffffd'} description={'dfffffffffffffff'} className='object-card'/>*/}
     </div>
   );
 }
