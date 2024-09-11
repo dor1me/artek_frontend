@@ -153,6 +153,50 @@ span {
 }
 
 .search-bling-icons{
+    display: flex;
+    align-items: center;
     gap: 12px;
-    display: inline-flex;
+}
+
+.phone-number {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.phone-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.mail-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.number {
+    font-size: 24px;
+}
+
+.number-info {
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+.contacts {
+    display: flex;
+    width: 214px;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 30px;
+}
+
+.email {
+    display: flex;
+    gap: 12px;
+}
+
+.phone-and-mail span {
+    gap: 4px;
 }
