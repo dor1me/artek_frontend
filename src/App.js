@@ -19,7 +19,6 @@ function App() {
         {/*<ObjectPopupInfo objectName={'artek_arena'} className={'object-popup'}/>*/}
       {/*<UnityGame/>*/}
       {/*<GamePlayer/>*/}
-      {/*  <Description name={'dffffd'} description={'dfffffffffffffff'} className='object-card'/>*/}
     </div>
   );
 }

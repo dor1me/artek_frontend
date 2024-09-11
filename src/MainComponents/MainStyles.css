@@ -1,11 +1,28 @@
 :root {
+    --white: #ffffff;
+    --dark-blue: #2d2d44;
+    --green: #4eb543;
+    --orange: #e84e1b;
 
+    --main-font: 'Lato', sans-serif;
+    --trans: 0.135s ease-in-out;
+}
+
+* {
+    font-family: var(--main-font);
+    color: var(--white);
 }
 
 .header {
     display: flex;
-    color: red;
     gap: 125px;
+    margin: 20px 96px 1237px 96px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--stroke-white, #FFF);
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
 }
 
 .header ul {
@@ -17,19 +34,15 @@
     list-style: none;
 }
 
+.header-list {
+    gap: 23px;
+}
+
 /*.header ul:last-child {*/
 /*    margin-right: 0px;*/
 /*}*/
 
-:root {
-    --white: #ffffff;
-    --dark-blue: #2d2d44;
-    --green: #4eb543;
-    --orange: #e84e1b;
 
-    --main-font: 'Lato', sans-serif;
-    --trans: 0.135s ease-in-out;
-}
 
 /* not parallax styles */
 
@@ -98,5 +111,10 @@ body {
 
 .parallax__layer {
     transition: transform 0.3s linear;
+}
+
+.artek-logo {
+    width: 110px;
+    height: 83px;
 }
 
