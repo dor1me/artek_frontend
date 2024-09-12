@@ -198,3 +198,14 @@ span {
     row-gap: 4px;
     margin-top: 10px;
 }
+
+.header-container {
+    position: relative;
+    z-index: 2;
+}
+
+.changer-container {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+}

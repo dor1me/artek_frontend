@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <MainScreen/>
-        <Map/>
+        {/*<Map/>*/}
         {/*<Footer className={'footer'}/>*/}
       <ImageSwitcher/>
     </div>
