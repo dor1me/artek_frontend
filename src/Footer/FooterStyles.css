@@ -1,0 +1,17 @@
+.footer {
+    height: 669px;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.footer-wave-dark {
+    width: 100%;
+    height: 669px;
+    overflow: hidden;
+    left: -500px;
+}
+
+.gerb-icon {
+    background-color: red;
+}
