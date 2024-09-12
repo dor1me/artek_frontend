@@ -86,6 +86,7 @@ const ImageSwitcher = () => {
 
                 {/*<img src = './source/object_card_images/artek_arena_card.png'/>*/}
             </div>
+            <div className={'gradient-under-map'}/>
         </div>
     );
 };

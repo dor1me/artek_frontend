@@ -20,6 +20,7 @@ function App() {
         {/*<Map/>*/}
         {/*<Footer className={'footer'}/>*/}
       <ImageSwitcher/>
+      {/*  <Parallax/>*/}
     </div>
   );
 }

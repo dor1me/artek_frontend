@@ -50,3 +50,11 @@
     right: -300px;
     z-index: 3;
 }
+
+.gradient-under-map {
+    width: 100%;
+    height: 657px;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, rgba(219, 234, 254, 0.00) 0%, #E3EFFE 51.68%, #EAF3FE 100%);
+    top: 841px;
+}
