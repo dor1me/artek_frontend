@@ -1,18 +1,21 @@
 import React from 'react'
 import MainScreen from "./MainComponents/MainScreen";
-import Footer from "./Footer/Footer";
 import ImageSwitcher from "./MapComponents/ImageChanger";
-import Parallax from "./MainComponents/Parallax";
 import Scroll from "./MainComponents/ScrollComponent";
+import TestGame from "./Games/TestGame";
+import './App.css'
+import Map from "./MapComponents/Map";
+import ModalCard from "./ObjectInfoComponents/ModalCard";
 
 function App() {
   return (
     <div className="App">
       <MainScreen/>
-      <ImageSwitcher/>
-      {/*<Footer/>*/}
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <Scroll/>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <ModalCard/>
+      {/*<ImageSwitcher/>*/}
+      {/*<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>*/}
+
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import './PopupStyle.css';
+import TestGame from "../Games/TestGame";
 
 const ObjectPopupInfo = ({objectName}) => {
     const objectInfo = {
@@ -20,9 +21,7 @@ const ObjectPopupInfo = ({objectName}) => {
             {/*<div>{objectInfo[ObjectName].description}</div>*/}
             {/*<div>{objectInfo[ObjectName].product}</div>*/}
 
-            <img src = {imageToRender} className={'object-card'}/>
-            <img src = './source/object_card_images/waves/wave_1.png' className={'wave-1'}/>
-            <img src = './source/object_card_images/waves/wave_2.png' className={'wave-2'}/>
+            <TestGame className={'unity-game-container'}/>
         </div>
     )
 

@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import './MapStyles.css';
 import Description from "./Description";
+import TestGame from "../Games/TestGame";
 
 const MapObject = ({objectName, className}) => {
     const objectInfo = {
