@@ -58,3 +58,8 @@
     background: linear-gradient(180deg, rgba(219, 234, 254, 0.00) 0%, #E3EFFE 51.68%, #EAF3FE 100%);
     top: 841px;
 }
+
+.changer-container {
+    position: fixed;
+    z-index: -1;
+}

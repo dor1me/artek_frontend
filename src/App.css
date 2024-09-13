@@ -86,3 +86,9 @@
     transform: rotate(360deg);
   }
 }
+
+
+.changer-container {
+  position: fixed;
+  z-index: 5;
+}

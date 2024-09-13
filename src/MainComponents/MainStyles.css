@@ -200,8 +200,8 @@ span {
 }
 
 .header-container {
-    position: relative;
-    z-index: 2;
+    position: fixed;
+    z-index: 0;
 }
 
 .changer-container {

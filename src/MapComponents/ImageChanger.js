@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './MapStyles.css'
 
 // Массив путей к изображениям. Замените их на свои.
 const images = [
@@ -75,7 +76,7 @@ const ImageSwitcher = () => {
     }, []); // Пустой массив зависимостей, чтобы эффект выполнялся только один раз
 
     return (
-        <div  className={'changer-container'}>
+        <div className={'changer-container'}>
             <div style={{ width: '100%', height: '100vh', overflow: 'hidden' }}>
                 {/*<p>{imageIndex}</p>*/}
                 <img

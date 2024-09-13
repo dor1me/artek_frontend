@@ -5,9 +5,10 @@ import {GerbIcon} from "../Icons/Gerbcon";
 
 const Footer = () => {
     return (
-        <div>
-            <FooterWave className={'footer-wave-dark'}/>
-            <GerbIcon className={'gerb-icon'}/>
+        <div className={'red'}>
+            {/*<FooterWave className={'footer-wave-dark'}/>*/}
+            {/*<GerbIcon className={'gerb-icon'}/>*/}
+
         </div>
     )
 }
