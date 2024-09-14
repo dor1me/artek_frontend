@@ -6,8 +6,10 @@ const ObjectPopupInfo = ({objectName}) => {
     const objectInfo = {
         artek_arena: {
             name: 'Артек-Арена',
-            description: 'описание Артек-Арены',
+            description: 'Если ваши друзья в разных лагерях — это не страшно, \n' +
+                'ведь на самых главных событиях смены вас объединит Артек Арена!',
             year: '1963',
+            address: 'пгт. Гурзуф и тп',
         },
     }
 

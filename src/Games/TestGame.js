@@ -1,7 +1,8 @@
 import React from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 
-function TestGame() {
+function TestGame({gameName}) {
+
     const { unityProvider } = useUnityContext({
         loaderUrl: "./unity/Build/magic-story.loader.js",
         dataUrl: "./unity/Build/magic-story.data",
@@ -11,7 +12,7 @@ function TestGame() {
 
     return <Unity
         unityProvider={unityProvider}
-        style={{width: 1500}}
+        style={{width: 1655}}
     />;
 }
 
