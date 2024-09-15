@@ -62,23 +62,21 @@ img {
     max-width: 720px;
     width: 90%;
     height: 930px;
+    max-height: 930px;
 
     position: relative;
     z-index: 10; /* Содержимое поверх изображения */
     border-radius: 28px;
     overflow: hidden;
-}
-
-.modal-window-header {
-    margin-left: 40px;
+    padding: 40px 40px 0px 40px;
 }
 
 .header-text {
     font-size: 72px;
-    margin-top: 40px;
     margin-bottom: 0px;
     row-gap: 10px;
     flex-direction: column;
+    margin-top: 0px;
 }
 
 .description-top {
@@ -196,6 +194,8 @@ img {
     overflow: hidden;
     bottom: -90px;
     width: 100%;
+    margin: 0px -40px 0px -40px;
+
 }
 
 .wave-2 {
@@ -204,6 +204,9 @@ img {
     overflow: hidden;
     bottom: 0px;
     width: 100%;
+    margin: 0px -40px 0px -40px;
+
+    /*left: 40px;*/
 }
 
 .wave-3 {
@@ -213,4 +216,5 @@ img {
     bottom: 120px;
     width: 100%;
     scale: 1.2;
+    margin: 0px -40px 0px -40px;
 }
