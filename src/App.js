@@ -10,8 +10,8 @@ import Mouse from "./MainComponents/Mouse";
 function App() {
         return (
     <div className="App">
-      <MainScreen/>
-        <Mouse/>
+      {/*<MainScreen/>*/}
+        {/*<Mouse/>*/}
       {/*  <ModalCard objectName={'artek_arena'}/>*/}
       <ImageSwitcher/>
         <ModalCard objectName={'artek_arena'} classN={'arena'}/>

@@ -179,7 +179,7 @@ const ImageSwitcher = () => {
     return (
         <div className={'changer-container'}>
             <div style={{ width: '100%', height: '100vh', overflow: 'hidden' }}>
-                {/*<p>{imageIndex}</p>*/}
+                <p>{imageIndex}</p>
                 <img
                     src={images[imageIndex]} // Используем текущее изображение из массива
                     alt="Rotating" // Альт-текст для изображения
