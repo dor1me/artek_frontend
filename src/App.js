@@ -1,23 +1,21 @@
 import React from 'react'
 import MainScreen from "./MainComponents/MainScreen";
-import ImageSwitcher from "./MapComponents/ImageChanger";
-import Scroll from "./MainComponents/ScrollComponent";
-import TestGame from "./Games/TestGame";
 import './App.css'
-import Map from "./MapComponents/Map";
 import ModalCard from "./ObjectInfoComponents/ModalCard";
-import TeamCarousel from "./TeamComponents/TeamCarousel";
-import {CrossIcon} from "./Icons/CrossIcon";
+import ImageSwitcher from "./MapComponents/ImageChanger";
+import Footer from "./Footer/Footer";
+import Mouse from "./MainComponents/Mouse";
 
 
 function App() {
-  return (
+        return (
     <div className="App">
       <MainScreen/>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <ModalCard objectName={'artek_arena'}/>
-      <CrossIcon/>
-      {/*<TeamCarousel/>*/}
+        <Mouse/>
+      {/*  <ModalCard objectName={'artek_arena'}/>*/}
+      <ImageSwitcher/>
+        <ModalCard objectName={'artek_arena'} classN={'arena'}/>
+      {/*<Footer/>*/}
     </div>
   );
 }

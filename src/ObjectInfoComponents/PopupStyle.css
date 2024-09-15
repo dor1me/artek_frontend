@@ -16,30 +16,185 @@ img {
     position: relative;
 }
 
-.wave-1 {
-    grid-column: 1 / auto;
-    grid-row: 1;
-    position: relative;
-    left: -15%;
-    width: 115%;
-    height: 100%;
-    top: 6px;
-}
-
-.wave-2 {
-    grid-row: 1;
-    grid-column: 1 / auto;
-    z-index: -1;
-    position: relative;
-    left: 420px;
-    width: 130%;
-    height: 638px;
-    top: 120px;
-}
-
 
 .close-button {
     border-radius: 100px;
     border: 2px solid rgba(255, 255, 255, 0.16);
-    background: rgba(0, 0, 0, 0.25);
+    background: linear-gradient(90deg, #F8A90C 0%, #E54A3F 100%);
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    transition: background 0.3s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.close-button:hover {
+    background: rgba(33, 33, 33, 0.7);
+
+}
+
+.modal-div {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(181deg, #10a2d5 2.19%, #156BAE 54.89%);
+    max-width: 720px;
+    width: 90%;
+    height: 930px;
+
+    position: relative;
+    z-index: 10; /* Содержимое поверх изображения */
+    border-radius: 28px;
+    overflow: hidden;
+}
+
+.modal-window-header {
+    margin-left: 40px;
+}
+
+.header-text {
+    font-size: 72px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    row-gap: 10px;
+    flex-direction: column;
+}
+
+.description-top {
+    display: flex;
+    gap: 36px;
+}
+
+.description-text {
+    text-align: left;
+    color: #fff;
+    font-size: 24px;
+    margin-top: 24px;
+}
+
+.description-text-top {
+    color: rgba(255, 255, 255, 0.68);
+    text-align: left;
+    margin: 0px;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 33.6px */
+}
+
+.module-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 28px;
+    /*backdrop-filter: blur(2px);*/
+}
+
+.game {
+    width: 600px;
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0);
+    transition: border 0.3s ease-in;
+
+}
+
+.game:hover {
+    cursor: pointer;
+    border: 3px solid rgba(255, 255, 255, 0.16);
+}
+
+.game-button {
+    outline: none;
+    background: transparent;
+    border: none;
+    margin-top: 200px;
+}
+
+.modale-div-all {
+    position: relative;
+    max-width: 1655px;
+    width: 90%;
+    border-radius: 28px;
+    display: flex;
+    margin-bottom: 75px;
+}
+
+.back-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Для полного заполнения фона */
+    z-index: -1; /* Чтобы изображение было под содержимым */
+    border-radius: 28px;
+    /*backdrop-filter: blur(2px);*/
+}
+
+.div-close-btn {
+    width: 100%;
+    display: flex;
+}
+
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; /* Центрирование по вертикали */
+    justify-content: center; /* Центрирование по горизонтали */
+}
+
+.modal-content {
+    left: 125px;
+    position: fixed; /* Fix the position of the modal */
+    border: none;
+    width: 100%;
+    z-index: 1001; /* Ensure it is above the overlay */
+}
+
+.arena {
+    margin-top: 500px;
+    position: sticky;
+    left: 900px;
+}
+
+.modal-game {
+    z-index: 10000;
+}
+
+.wave-1 {
+    position: absolute;
+    z-index: -5;
+    overflow: hidden;
+    bottom: -90px;
+    width: 100%;
+}
+
+.wave-2 {
+    position: absolute;
+    z-index: -6;
+    overflow: hidden;
+    bottom: 0px;
+    width: 100%;
+}
+
+.wave-3 {
+    position: absolute;
+    z-index: -7;
+    overflow: hidden;
+    bottom: 120px;
+    width: 100%;
+    scale: 1.2;
 }

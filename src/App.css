@@ -92,3 +92,9 @@
   position: fixed;
   z-index: 5;
 }
+
+.arena-modal-preview {
+  position: relative;
+  top: 973px;
+  left: 532px;
+}

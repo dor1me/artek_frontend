@@ -1,13 +1,14 @@
 import React from 'react'
 
-export const FooterWave = ({className}) => {
+export const CardWave1 = ({className}) => {
     return(
-        <svg xmlns="http://www.w3.org/2000/svg" width="1899" height="669" viewBox="0 0 1920 669" fill="none">
-            <path d="M307 26.1322C161.4 -16.6678 36.3333 3.29883 -8 18.6322L-25 669H1981.5L1998.5 6.13207C1969.17 18.7987 1872.1 47.8321 1718.5 62.6321C1526.5 81.1321 1370.5 70.6321 1166.5 23.6321C1007.3 -19.1679 789.833 5.79876 701 23.6321C661.5 31.1321 469.5 73.8999 307 26.1322Z" fill="url(#paint0_linear_44_218)"/>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1386" height="642" viewBox="0 0 720 165" fill="none">
+            <path d="M165.877 46.7107C87.2416 88.9352 -134.321 207.906 -300.158 33.1311L-293.21 642.461H1041.45L1053 8.45357C832.985 109.233 793.212 97.0272 630.427 47.0689L629.115 46.6663C401.237 -23.2672 266.529 -7.33582 165.96 46.6663L165.877 46.7107Z" fill="url(#paint0_linear_384_18)"/>
+            <path d="M169.744 53.7148L169.745 53.7145C267.772 1.07711 400.083 -15.2531 626.768 54.3142L628.08 54.7168L629.183 55.0553C709.599 79.7355 761.481 95.6581 820.708 92.275C878.033 89.0006 941.609 67.7196 1044.77 20.9936L1033.59 634.461H-285.301L-291.935 52.6251C-209.987 129.855 -116.296 141.936 -33.2278 129.203C54.083 115.821 130.117 74.9934 169.456 53.8694L169.661 53.7592L169.662 53.7589L169.744 53.7148Z" stroke="white" stroke-opacity="0.15" stroke-width="16"/>
             <defs>
-                <linearGradient id="paint0_linear_44_218" x1="1998.5" y1="374.816" x2="-8.00028" y2="374.816" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#174D98"/>
-                    <stop offset="0.91435" stop-color="#10A3D6"/>
+                <linearGradient id="paint0_linear_384_18" x1="410.642" y1="-22.3552" x2="414.113" y2="139.508" gradientUnits="userSpaceOnUse">
+                    <stop offset="0.255941" stop-color="#10A2D5"/>
+                    <stop offset="1" stop-color="#156BAE"/>
                 </linearGradient>
             </defs>
         </svg>
