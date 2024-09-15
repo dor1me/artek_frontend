@@ -105,11 +105,14 @@ const ModalCard = ({ objectName, classN }) => {
         },
     };
 
+    const backgroundImage = `./source/object_card_images/${objectName}.png`
+    // const previewImage = `./source/previews/${objectName}_preview.jpg`
+
     const modalContent = (
         <div className='modale-div-all'>
             <img
                 className='back-img'
-                src='./source/object_card_images/artek_arena.png'
+                src={backgroundImage}
                 alt='background'
             />
             <div className='modal-div'>
@@ -127,7 +130,7 @@ const ModalCard = ({ objectName, classN }) => {
                         setGameIsPlaying(true);
                         openSecondModal(); // Открываем второе модальное окно
                     }}>
-                        <img src='./source/previews/audag_peview.jpg' className='game'/>
+                        {/*<img src={previewImage} className='game'/>*/}
                     </button>
                 </div>
                 <img src='./source/waves/wave_1.svg' className='wave-1'/>
@@ -144,7 +147,9 @@ const ModalCard = ({ objectName, classN }) => {
 
     return (
         <div className='modal-window'>
-            <button onClick={openModal} className={classN}>Открыть модальное окно</button>
+            <button onClick={openModal} className={classN}>
+                Открыть модальное окно
+            </button>
             <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}

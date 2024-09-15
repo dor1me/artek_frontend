@@ -14,7 +14,7 @@ function App() {
         {/*<Mouse/>*/}
       {/*  <ModalCard objectName={'artek_arena'}/>*/}
       <ImageSwitcher/>
-        <ModalCard objectName={'artek_arena'} classN={'arena'}/>
+        <ModalCard objectName={'cafe'} classN={'arena'}/>
       {/*<Footer/>*/}
     </div>
   );
