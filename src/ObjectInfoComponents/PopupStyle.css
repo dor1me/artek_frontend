@@ -213,65 +213,145 @@ img {
     margin: 0px -40px 0px -40px;
 }
 
+@keyframes hoverObject {
+    from{
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+@keyframes unhoverObject {
+    from{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
 .arena {
+    background: none;
+    border: none;
     position: absolute;
     left: 900px;
     top: 550px;
 }
 
 .suuk {
+    opacity: 0;
+    scale: 0.50;
+    background: none;
+    border: none;
     position: absolute;
-    left: 700px;
-    top: 500px;
+    left: 633px;
+    top: 435px;
     /*margin-top: 00px;*/
 }
 
-.school {
-    position: absolute;
-    left: 1200px;
-    top: 350px;
+.suuk:hover {
+    opacity: 1;
+    animation: hoverObject 0.5s forwards;
 }
 
+.suuk:not(hover) {
+    opacity: 1;
+    animation: unhoverObject 0.5s forwards;
+}
+
+.school {
+    opacity: 0;
+    scale: 0.5;
+    background: none;
+    border: none;
+    position: absolute;
+    left: 1075px;
+    top: 230px;
+}
+
+.school:hover {
+    opacity: 1;
+
+}
+
+
 .monument {
+    background: none;
+    border: none;
     position: absolute;
     left: 1100px;
     top: 600px;
 }
 
 .audag {
+    background: none;
+    border: none;
     position: absolute;
     left: 1550px;
     top: 400px;
 }
 
 .stadium {
+    scale: 0.5;
+    opacity: 0;
+    background: none;
+    border: none;
     position: absolute;
-    left: 875px;
-    top: 400px;
+    left: 780px;
+    top: 340px;
+}
+
+.stadium:hover {
+    opacity: 1;
+
 }
 
 .stairs {
+    background: none;
+    border: none;
     position: absolute;
     left: 1150px;
     top: 450px;
 }
 
 .fortress {
+    opacity: 0;
+    scale: 0.5;
+    background: none;
+    border: none;
     position: absolute;
-    left: 180px;
-    top: 610px;
+    left: 171px;
+    top: 547px;
+}
+
+.fortress:hover {
+    opacity: 1;
 }
 
 .olive {
+    background: none;
+    border: none;
     position: absolute;
     left: 1130px;
     top: 500px;
 }
 
 .cafe {
+    opacity: 0;
+    scale: 0.5;
+    background: none;
+    border: none;
     position: absolute;
-    left: 480px;
-    top: 590px;
+    left: 423px;
+    top: 504px;
+}
+
+.cafe:hover{
+    opacity: 1;
 }
 
 @keyframes fadeInUp {
@@ -285,6 +365,29 @@ img {
     }
 }
 
+@keyframes fadeInDown {
+    from {
+        opacity: 1; /* Конечное состояние: прозрачность 1 */
+        transform: translateY(0);
+     /* Начальное состояние: смещение вниз */
+    }
+    to {
+        opacity: 0; /* Начальное состояние: прозрачность 0 */
+        transform: translateY(-20px);
+ /* Конечное состояние: смещение 0 */
+    }
+}
+
+
+
+
+
+
 .modale-div-all {
     animation: fadeInUp 0.5s ease-out;
+}
+
+
+.event-block {
+    background-color: red;
 }

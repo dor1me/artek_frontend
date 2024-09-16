@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './MapStyles.css'
+import '../ObjectInfoComponents/PopupStyle.css'
 
 // Массив путей к изображениям. Замените их на свои.
 const images =
@@ -160,6 +161,7 @@ const images =
 const ImageSwitcher = () => {
     // Состояние для хранения текущего индекса изображения
     const [imageIndex, setImageIndex] = useState(0);
+    const [hover, setImageHover] = useState(false);
 
     // Обработчик события движения мыши
     const handleMouseMove = (event) => {
@@ -188,6 +190,7 @@ const ImageSwitcher = () => {
 
                 {/*<img src = './source/object_card_images/artek_arena_card.png'/>*/}
             </div>
+                <div className='event-block' />
             <div className={'gradient-under-map'}/>
         </div>
     );

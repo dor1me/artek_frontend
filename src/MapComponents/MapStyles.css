@@ -198,3 +198,7 @@
     margin-bottom: 0px
 }
 
+.event-block {
+    background-color: red;
+    z-index: 1000000;
+}

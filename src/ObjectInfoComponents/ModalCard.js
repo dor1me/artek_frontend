@@ -18,16 +18,16 @@ const ModalCard = ({objectName, classN }) => {
         },
         suuk_su: {
             name: 'ДВОРЕЦ СУУК-СУ',
-            description: 'Никогда не были в Хогвартсе? Потому что он у нас, в Артеке! Здесь преподают лучшие волшебники мира, они поделиться с вами своей магией!',
-            year: '1925',
+            description: 'Музей истории Артека и космонавтики, праздники и концерты, библиотека и кружки — что только не вмешает досуговый центр артековца «Суук-Су»!',
+            year: '1903',
             address: 'пгт. Гурзуф',
             type: 'video',
             game: 'Попробуйте сыграть в нашу увлекательную игру и познакомьтесь ближе с историей Артека!'
         },
         school: {
             name: 'ШКОЛА АРТЕКА',
-            description: 'Музей истории Артека и космонавтики, праздники концерты, библиотека и кружки — что только не вмешает досуговый центр артековца «Суук-Су»!',
-            year: '1903',
+            description: 'Никогда не были в Хогвартсе? Потому что он у нас, в Артеке! Здесь преподают лучшие волшебники мира, они поделиться с вами своей магией!',
+            year: '1925',
             address: 'пгт. Гурзуф',
             type: 'game',
             game: 'Попробуйте сыграть в нашу увлекательную игру и познакомьтесь ближе с историей Артека!'
@@ -50,7 +50,7 @@ const ModalCard = ({objectName, classN }) => {
         },
         audag: {
             name: 'ГОРА АЮ-ДАГ',
-            description: 'Лестница лагеря Морского, ведущая в краеведческий музей. И с ней связана очень забавная история, об этом в нашем сюжете!',
+            description: 'Звание артековца получают здесь! Сам Пушкин поднимался на Аю-Даг и вдохновлялся красотой Крыма. И, конечно, вечная легенда Артека — Абсолют на страже дневного отдыха.',
             year: '1926',
             address: 'пгт. Гурзуф',
             type: 'game',
@@ -99,6 +99,9 @@ const ModalCard = ({objectName, classN }) => {
     const openSecondModal = () => setSecondModalIsOpen(true);
     const closeSecondModal = () => setSecondModalIsOpen(false);
 
+
+
+
     const commonStyles = {
         content: {
             // backgroundColor: 'white',
@@ -107,7 +110,7 @@ const ModalCard = ({objectName, classN }) => {
             borderRadius: '8px',
             padding: '20px',
             maxWidth: '1655px',
-            minWodth: '1655px',
+            minWidth: '1655px',
 
             overflow: 'hidden',
         },
@@ -118,6 +121,7 @@ const ModalCard = ({objectName, classN }) => {
 
     const backgroundImage = `./source/object_card_images/${objectName}.png`
     const previewImage = `./source/previews/${objectName}.jpg`
+    const miniImage = `./source/object_images/${objectName}.svg`
 
     const modalContent = (
         <div className='modale-div-all'>
@@ -161,7 +165,7 @@ const ModalCard = ({objectName, classN }) => {
     return (
         <div className='modal-window'>
             <button onClick={openModal} className={classN}>
-                Открыть модальное окно
+                <img src={miniImage}/>
             </button>
             <Modal
                 isOpen={modalIsOpen}
@@ -172,18 +176,18 @@ const ModalCard = ({objectName, classN }) => {
             >
                 {isGamePlaying ? <ModalCardGame /> : modalContent}
             </Modal>
-            <Modal
-                isOpen={isSecondModalOpen}
-                onRequestClose={closeSecondModal}
-                style={commonStyles}
-                className='modal-content'
-                overlayClassName='modal-overlay'
-            >
-                <div className={'game-modal'}>
-                    <AudagGame/>
-                </div>
+            {/*<Modal*/}
+            {/*    isOpen={isSecondModalOpen}*/}
+            {/*    onRequestClose={closeSecondModal}*/}
+            {/*    style={commonStyles}*/}
+            {/*    className='modal-content'*/}
+            {/*    overlayClassName='modal-overlay'*/}
+            {/*>*/}
+            {/*    <div className={'game-modal'}>*/}
+            {/*        <AudagGame/>*/}
+            {/*    </div>*/}
 
-            </Modal>
+            {/*</Modal>*/}
         </div>
     );
 };
