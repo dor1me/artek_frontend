@@ -214,7 +214,25 @@ img {
 }
 
 .arena {
-    position: sticky;
+    position: absolute;
     left: 900px;
-    margin-top: 500px;
+    top: 550px;
+}
+
+.suuk {
+    position: absolute;
+    left: 700px;
+    top: 500px;
+
+    /*margin-top: 00px;*/
+}
+
+.school {
+    position: absolute;
+    left: 1200px;
+    top: 350px;
+}
+
+.monument {
+    
 }
