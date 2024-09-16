@@ -428,3 +428,17 @@ img {
 .modale-div-all {
     animation: fadeInUp 0.5s ease-out;
 }
+
+.media-container {
+    background-color: #4eb543;
+    position: relative;
+    max-width: 1655px;
+    width: 100%;
+    border-radius: 28px;
+    display: flex;
+    margin-bottom: 75px;
+    overflow: hidden;
+    top: 50%;
+    mergin: auto;
+    /*left: 50%;*/
+}

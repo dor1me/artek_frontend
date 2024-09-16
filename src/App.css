@@ -58,6 +58,10 @@
   width: 1920px;
 }
 
+.App::-webkit-scrollbar {
+  display: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -97,4 +101,18 @@
   position: relative;
   top: 973px;
   left: 532px;
+}
+
+.footer-scroll {
+  position: relative;
+  top: 500px;
+}
+
+.container-map {
+  position: fixed;
+  z-index: -2;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }

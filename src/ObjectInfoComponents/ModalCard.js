@@ -100,6 +100,14 @@ const ModalCard = ({objectName, classN }) => {
     const closeSecondModal = () => setSecondModalIsOpen(false);
 
 
+    function MediaPlayer() {
+        return (
+            <div className='media-container'>
+               <AudagGame/>
+
+            </div>
+        );
+    }
 
 
     const commonStyles = {
@@ -174,20 +182,8 @@ const ModalCard = ({objectName, classN }) => {
                 className='modal-content'
                 overlayClassName='modal-overlay'
             >
-                {isGamePlaying ? <ModalCardGame /> : modalContent}
+                {isGamePlaying ? <MediaPlayer /> : modalContent}
             </Modal>
-            {/*<Modal*/}
-            {/*    isOpen={isSecondModalOpen}*/}
-            {/*    onRequestClose={closeSecondModal}*/}
-            {/*    style={commonStyles}*/}
-            {/*    className='modal-content'*/}
-            {/*    overlayClassName='modal-overlay'*/}
-            {/*>*/}
-            {/*    <div className={'game-modal'}>*/}
-            {/*        <AudagGame/>*/}
-            {/*    </div>*/}
-
-            {/*</Modal>*/}
         </div>
     );
 };
