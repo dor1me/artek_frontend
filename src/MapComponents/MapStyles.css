@@ -63,3 +63,126 @@
     position: fixed;
     z-index: -1;
 }
+
+.play-button {
+    width: 50px; /* Установите нужный размер кнопки */
+    height: 50px; /* Установите нужный размер кнопки */
+    border-radius: 50%; /* Делает кнопку круглой */
+    border: 2px solid rgba(255, 255, 255, 0.16);
+    background: linear-gradient(90deg, #F8A90C 0%, #E54A3F 100%);
+    background-clip: padding-box;
+    overflow: hidden;
+    margin: 8px;
+    display: flex; /* Используйте flexbox для центрирования содержимого */
+    align-items: center; /* Вертикальное выравнивание */
+    justify-content: center; /* Горизонтальное выравнивание */
+    position: sticky;
+
+}
+
+.play-label {
+    font-size: 18px;
+}
+
+.preview-card-container {
+    position: relative; /* Позволяет позиционировать элементы внутри */
+    display: inline-block; /* Устанавливает размер контейнера по содержимому */
+}
+
+.game {
+    display: block; /* Убирает возможные пробелы под изображением */
+}
+
+.play-button {
+    width: 50px; /* Размер кнопки */
+    height: 50px; /* Размер кнопки */
+    border-radius: 50%; /* Делает кнопку круглой */
+    border: 2px solid rgba(255, 255, 255, 0.16);
+    background: linear-gradient(90deg, #F8A90C 0%, #E54A3F 100%);
+    background-clip: padding-box;
+    overflow: hidden;
+    position: absolute; /* Абсолютное позиционирование внутри контейнера */
+    bottom: 10px; /* Расстояние от нижнего края */
+    right: 10px; /* Расстояние от правого края */
+    display: flex; /* Используйте flexbox для центрирования содержимого */
+    align-items: center; /* Вертикальное выравнивание */
+    justify-content: center; /* Горизонтальное выравнивание */
+}
+
+.play-label {
+    font-size: 18px;
+    display: block;
+    text-align: center; /* Центрирование текста под изображением */
+    margin-top: 8px; /* Отступ сверху от кнопки */
+}
+
+.game {
+    display: block; /* Убирает возможные пробелы под изображением */
+}
+
+.play-button {
+    width: 50px; /* Размер кнопки */
+    height: 50px; /* Размер кнопки */
+    border-radius: 50%; /* Делает кнопку круглой */
+    border: 2px solid rgba(255, 255, 255, 0.16);
+    background: linear-gradient(90deg, #F8A90C 0%, #E54A3F 100%);
+    background-clip: padding-box;
+    overflow: hidden;
+    position: absolute; /* Абсолютное позиционирование внутри контейнера */
+    top: 50%; /* Центрирование по вертикали */
+    left: 50%; /* Центрирование по горизонтали */
+    transform: translate(-50%, -50%); /* Смещение обратно на 50% от размеров кнопки */
+    display: flex; /* Используйте flexbox для центрирования содержимого */
+    align-items: center; /* Вертикальное выравнивание */
+    justify-content: center; /* Горизонтальное выравнивание */
+}
+
+.play-label {
+    font-size: 18px;
+    display: block;
+    text-align: center; /* Центрирование текста под изображением */
+    margin-top: 8px; /* Отступ сверху от кнопки */
+}
+
+.preview-card-container {
+    position: relative; /* Позволяет позиционировать элементы внутри */
+    display: inline-block; /* Устанавливает размер контейнера по содержимому */
+}
+
+.game {
+    display: block; /* Убирает возможные пробелы под изображением */
+    width: 100%; /* Устанавливает изображение на полный размер контейнера */
+    height: auto; /* Сохраняет пропорции изображения */
+}
+
+.center-overlay {
+    position: absolute; /* Абсолютное позиционирование внутри контейнера */
+    top: 50%; /* Центрирование по вертикали */
+    left: 50%; /* Центрирование по горизонтали */
+    transform: translate(-50%, -50%); /* Смещение обратно на 50% от размеров контейнера */
+    display: flex; /* Используйте flexbox для центрирования содержимого */
+    flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: center; /* Центрирование содержимого по горизонтали */
+    justify-content: center; /* Центрирование содержимого по вертикали */
+    text-align: center; /* Центрирование текста */
+}
+
+.play-button {
+    width: 60px; /* Размер кнопки */
+    height: 60px; /* Размер кнопки */
+    border-radius: 50%; /* Делает кнопку круглой */
+    border: 2px solid rgba(255, 255, 255, 0.16);
+    background: linear-gradient(90deg, #F8A90C 0%, #E54A3F 100%);
+    background-clip: padding-box;
+    overflow: hidden;
+    display: flex; /* Используйте flexbox для центрирования содержимого */
+    align-items: center; /* Вертикальное выравнивание */
+    justify-content: center; /* Горизонтальное выравнивание */
+    margin-bottom: 8px; /* Отступ снизу от кнопки */
+}
+
+.play-label {
+    font-size: 24px;
+    margin-top: 115px; /* Отступ сверху от надписи */
+    margin-left: 17px;
+}

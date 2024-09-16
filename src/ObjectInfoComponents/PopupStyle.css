@@ -178,12 +178,6 @@ img {
     z-index: 1001; /* Ensure it is above the overlay */
 }
 
-.arena {
-    margin-top: 500px;
-    position: sticky;
-    left: 900px;
-}
-
 .modal-game {
     z-index: 10000;
 }
@@ -217,4 +211,10 @@ img {
     width: 100%;
     scale: 1.2;
     margin: 0px -40px 0px -40px;
+}
+
+.arena {
+    position: sticky;
+    left: 900px;
+    margin-top: 500px;
 }

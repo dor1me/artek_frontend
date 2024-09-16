@@ -4,14 +4,16 @@ import ModalCardGame from './ModalCardGame';
 import AudagGame from '../Games/AudagGame';
 import './PopupStyle.css';
 import {CardWave1} from "../Waves/FooterWave";
+import PreviewCard from "../MapComponents/PreviewCard";
 
-const ModalCard = ({ objectName, classN }) => {
+const ModalCard = ({objectName, classN }) => {
     const objectInfo = {
         artek_arena: {
             name: 'АРТЕК АРЕНА',
             description: 'Если ваши друзья в разных лагерях — это не страшно, ведь на самых главных событиях смены вас объединит Артек Арена!',
             year: '1963',
             address: 'пгт. Гурзуф и тп',
+            type: 'game',
             game: 'Попробуйте сыграть в нашу увлекательную игру и познакомьтесь ближе с историей Артека!'
         },
         suuk_su: {
@@ -19,6 +21,7 @@ const ModalCard = ({ objectName, classN }) => {
             description: 'Никогда не были в Хогвартсе? Потому что он у нас, в Артеке! Здесь преподают лучшие волшебники мира, они поделиться с вами своей магией!',
             year: '1925',
             address: 'пгт. Гурзуф',
+            type: 'video',
             game: 'Попробуйте сыграть в нашу увлекательную игру и познакомьтесь ближе с историей Артека!'
         },
         school: {
@@ -26,6 +29,7 @@ const ModalCard = ({ objectName, classN }) => {
             description: 'Музей истории Артека и космонавтики, праздники концерты, библиотека и кружки — что только не вмешает досуговый центр артековца «Суук-Су»!',
             year: '1903',
             address: 'пгт. Гурзуф',
+            type: 'game',
             game: 'Попробуйте сыграть в нашу увлекательную игру и познакомьтесь ближе с историей Артека!'
         },
         monument: {
@@ -33,6 +37,7 @@ const ModalCard = ({ objectName, classN }) => {
             description: 'Этот памятник — напоминание о важности сотрудничества и дружбы народов во все времена!',
             year: '1967',
             address: 'пгт. Гурзуф',
+            type: 'video',
             game: 'Попробуйте сыграть в нашу увлекательную игру и познакомьтесь ближе с историей Артека!'
         },
         stadium: {
@@ -40,6 +45,7 @@ const ModalCard = ({ objectName, classN }) => {
             description: 'Держать себя в форме помогает активная артековская жизнь, а её центр — Центральный стадион!',
             year: '1925',
             address: 'пгт. Гурзуф',
+            type: 'game',
             game: 'Попробуйте сыграть в нашу увлекательную игру и познакомьтесь ближе с историей Артека!'
         },
         audag: {
@@ -47,13 +53,15 @@ const ModalCard = ({ objectName, classN }) => {
             description: 'Лестница лагеря Морского, ведущая в краеведческий музей. И с ней связана очень забавная история, об этом в нашем сюжете!',
             year: '1926',
             address: 'пгт. Гурзуф',
+            type: 'game',
             game: 'Попробуйте сыграть в нашу увлекательную игру и познакомьтесь ближе с историей Артека!'
         },
         stairs: {
             name: 'ИТАЛЬЯНСКАЯ ЛЕСТНИЦА',
-            description: 'Держать себя в форме помогает активная артековская жизнь, а её центр — Центральный стадион!',
+            description: 'Лестница лагеря Морского, ведущая в краеведческий музей. И с ней связана очень забавная история, об этом в нашем сюжете!',
             year: '1967',
             address: 'пгт. Гурзуф',
+            type: 'video',
             game: 'Попробуйте сыграть в нашу увлекательную игру и познакомьтесь ближе с историей Артека!'
         },
         fortress: {
@@ -61,6 +69,7 @@ const ModalCard = ({ objectName, classN }) => {
             description: 'Ооочень древний объект. Кстати, артековцы тоже внесли вклад в изучение истории, найдя уникальные предметы тех времён!',
             year: '1371',
             address: 'г. Судак',
+            type: 'video',
             game: 'Попробуйте сыграть в нашу увлекательную игру и познакомьтесь ближе с историей Артека!'
         },
         olive: {
@@ -68,6 +77,7 @@ const ModalCard = ({ objectName, classN }) => {
             description: 'Именно здесь заложена капсула времени на 2048 год — всё это подтверждает огромную культурную ценность рощи для «Артека».',
             year: '1808',
             address: 'пгт. Гурзуф',
+            type: 'video',
             game: 'Попробуйте сыграть в нашу увлекательную игру и познакомьтесь ближе с историей Артека!'
         },
         cafe: {
@@ -75,7 +85,8 @@ const ModalCard = ({ objectName, classN }) => {
             description: 'Многими поколениями проверено, и мы заявляем: любишь поесть? Ждём тебя в рядах артековцев-обжор!.',
             year: '1925',
             address: 'пгт. Гурзуф',
-            game: 'Попробуйте сыграть в нашу увлекательную игру и познакомьтесь ближе с историей Артека!'
+            type: 'game',
+            game: 'Попробуйте сыграть в нашу увлекательную игру и познакомьтесь ближе с историей Артека!',
         },
     };
 
@@ -106,7 +117,7 @@ const ModalCard = ({ objectName, classN }) => {
     };
 
     const backgroundImage = `./source/object_card_images/${objectName}.png`
-    // const previewImage = `./source/previews/${objectName}_preview.jpg`
+    const previewImage = `./source/previews/${objectName}.jpg`
 
     const modalContent = (
         <div className='modale-div-all'>
@@ -130,6 +141,7 @@ const ModalCard = ({ objectName, classN }) => {
                         setGameIsPlaying(true);
                         openSecondModal(); // Открываем второе модальное окно
                     }}>
+                        <PreviewCard name={objectName} type={(objectInfo[objectName].type).toString()} className='game'/>
                         {/*<img src={previewImage} className='game'/>*/}
                     </button>
                 </div>
