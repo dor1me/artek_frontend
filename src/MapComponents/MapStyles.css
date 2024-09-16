@@ -91,6 +91,7 @@
 
 .game {
     display: block; /* Убирает возможные пробелы под изображением */
+    margin-bottom: 20px;
 }
 
 .play-button {
@@ -153,6 +154,11 @@
     display: block; /* Убирает возможные пробелы под изображением */
     width: 100%; /* Устанавливает изображение на полный размер контейнера */
     height: auto; /* Сохраняет пропорции изображения */
+    filter: brightness(80%);
+}
+
+.game:hover {
+    filter: brightness(100%);
 }
 
 .center-overlay {
@@ -186,3 +192,9 @@
     margin-top: 115px; /* Отступ сверху от надписи */
     margin-left: 17px;
 }
+
+.description-product-text {
+    font-size: 24px;
+    margin-bottom: 0px
+}
+

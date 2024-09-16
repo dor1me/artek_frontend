@@ -134,6 +134,7 @@ const ModalCard = ({objectName, classN }) => {
                         <p className='description-text-top'>Адрес · {objectInfo[objectName].address}</p>
                     </div>
                     <p className='description-text'>{objectInfo[objectName].description}</p>
+                    <p className='description-product-text'>{objectInfo[objectName].game}</p>
                 </div>
 
                 <div className='module-game'>
