@@ -223,7 +223,6 @@ img {
     position: absolute;
     left: 700px;
     top: 500px;
-
     /*margin-top: 00px;*/
 }
 
@@ -234,5 +233,43 @@ img {
 }
 
 .monument {
-    
+    position: absolute;
+    left: 1100px;
+    top: 600px;
+}
+
+.audag {
+    position: absolute;
+    left: 1550px;
+    top: 400px;
+}
+
+.stadium {
+    position: absolute;
+    left: 875px;
+    top: 400px;
+}
+
+.stairs {
+    position: absolute;
+    left: 1150px;
+    top: 450px;
+}
+
+.fortress {
+    position: absolute;
+    left: 180px;
+    top: 610px;
+}
+
+.olive {
+    position: absolute;
+    left: 1130px;
+    top: 500px;
+}
+
+.cafe {
+    position: absolute;
+    left: 480px;
+    top: 590px;
 }
