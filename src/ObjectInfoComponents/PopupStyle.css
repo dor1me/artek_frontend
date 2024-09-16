@@ -213,7 +213,7 @@ img {
     margin: 0px -40px 0px -40px;
 }
 
-@keyframes hoverObject {
+@keyframes hoverObjectSmall {
     from{
         opacity: 0.8;
         transform: scale(1);
@@ -223,7 +223,28 @@ img {
         transform: scale(1.1);
     }
 }
-@keyframes unhoverObject {
+@keyframes unhoverObjectSmall {
+    from{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+@keyframes hoverObjectBig {
+    from{
+        opacity: 0.9;
+        transform: scale(1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+@keyframes unhoverObjectBig {
     from{
         opacity: 1;
         transform: scale(1.1);
@@ -250,32 +271,36 @@ img {
     position: absolute;
     left: 633px;
     top: 435px;
-    /*margin-top: 00px;*/
 }
 
 .suuk:hover {
     opacity: 1;
-    animation: hoverObject 0.5s forwards;
+    animation: hoverObjectSmall 0.5s forwards;
 }
 
 .suuk:not(hover) {
     opacity: 1;
-    animation: unhoverObject 0.5s forwards;
+    animation: unhoverObjectSmall 0.5s forwards;
 }
 
 .school {
     opacity: 0;
-    scale: 0.5;
+    scale: 0.50;
     background: none;
     border: none;
     position: absolute;
-    left: 1075px;
-    top: 230px;
+    left: 1078px;
+    top: 232px;
 }
 
 .school:hover {
     opacity: 1;
+    animation: hoverObjectBig 0.5s forwards;
+}
 
+.school:not(hover) {
+    opacity: 1;
+    animation: unhoverObjectBig 0.5s forwards;
 }
 
 
@@ -307,7 +332,12 @@ img {
 
 .stadium:hover {
     opacity: 1;
+    animation: hoverObjectBig 0.5s forwards;
+}
 
+.stadium:not(hover) {
+    opacity: 1;
+    animation: unhoverObjectBig 0.5s forwards;
 }
 
 .stairs {
@@ -330,6 +360,12 @@ img {
 
 .fortress:hover {
     opacity: 1;
+    animation: hoverObjectSmall 0.5s forwards;
+}
+
+.fortress:not(hover) {
+    opacity: 1;
+    animation: unhoverObjectSmall 0.5s forwards;
 }
 
 .olive {
@@ -352,6 +388,12 @@ img {
 
 .cafe:hover{
     opacity: 1;
+    animation: hoverObjectSmall 0.5s forwards;
+}
+
+.cafe:not(hover){
+    opacity: 1;
+    animation: unhoverObjectSmall 0.5s forwards;
 }
 
 @keyframes fadeInUp {
@@ -385,9 +427,4 @@ img {
 
 .modale-div-all {
     animation: fadeInUp 0.5s ease-out;
-}
-
-
-.event-block {
-    background-color: red;
 }
