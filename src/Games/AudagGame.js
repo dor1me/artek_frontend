@@ -12,7 +12,7 @@ function AudagGame({gameName}) {
 
     return <Unity
         unityProvider={unityProvider}
-        style={{width: 1655}}
+        style={{height: 930}}
     />;
 }
 

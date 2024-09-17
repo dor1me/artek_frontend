@@ -100,11 +100,16 @@ const ModalCard = ({objectName, classN }) => {
     const closeSecondModal = () => setSecondModalIsOpen(false);
 
 
+
     function MediaPlayer() {
         return (
             <div className='media-container'>
+                <div className='div-close-btn'>
+                    <button onClick={closeModal} className='close-button'>
+                        <img src='./source/icons/close.svg' alt='close'/>
+                    </button>
+                </div>
                <AudagGame/>
-
             </div>
         );
     }
