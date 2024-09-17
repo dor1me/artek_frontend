@@ -94,6 +94,7 @@ const ModalCard = ({objectName, classN }) => {
     const [isGamePlaying, setGameIsPlaying] = useState(false);
     const [isSecondModalOpen, setSecondModalIsOpen] = useState(false);
 
+    const closeGame = () => setGameIsPlaying(false);
     const openModal = () => setModalIsOpen(true);
     const closeModal = () => setModalIsOpen(false);
     const openSecondModal = () => setSecondModalIsOpen(true);
@@ -105,7 +106,7 @@ const ModalCard = ({objectName, classN }) => {
         return (
             <div className='media-container'>
                 <div className='div-close-btn'>
-                    <button onClick={closeModal} className='close-button'>
+                    <button onClick={closeGame} className='close-button'>
                         <img src='./source/icons/close.svg' alt='close'/>
                     </button>
                 </div>
@@ -154,16 +155,16 @@ const ModalCard = ({objectName, classN }) => {
                         <p className='description-text-top'>Адрес · {objectInfo[objectName].address}</p>
                     </div>
                     <p className='description-text'>{objectInfo[objectName].description}</p>
-                    <p className='description-product-text'>{objectInfo[objectName].game}</p>
                 </div>
 
                 <div className='module-game'>
+                    <p className='description-product-text'>{objectInfo[objectName].game}</p>
+
                     <button className='game-button' onClick={() => {
                         setGameIsPlaying(true);
-                        openSecondModal(); // Открываем второе модальное окно
                     }}>
-                        <PreviewCard name={objectName} type={(objectInfo[objectName].type).toString()} className='game'/>
-                        {/*<img src={previewImage} className='game'/>*/}
+                        <PreviewCard name={objectName} type={(objectInfo[objectName].type).toString()} className='game-preview'/>
+                        <img src={previewImage} className='game'/>
                     </button>
                 </div>
                 <img src='./source/waves/wave_1.svg' className='wave-1'/>
@@ -190,7 +191,7 @@ const ModalCard = ({objectName, classN }) => {
                 className='modal-content'
                 overlayClassName='modal-overlay'
             >
-                {isGamePlaying ? <MediaPlayer /> : modalContent}
+                {isGamePlaying ? <ModalCardGame type={objectInfo[objectName].type}/> : modalContent}
             </Modal>
         </div>
     );

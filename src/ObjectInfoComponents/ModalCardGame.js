@@ -3,9 +3,10 @@ import Modal from 'react-modal';
 import './PopupStyle.css';
 
 import AudagGame from "../Games/AudagGame";
+import MediaPlayer from "../MediaPlayerCompinents/MediaPlayer";
 
 
-const ModalCardGame = ({objectName, classN}) => {
+const ModalCardGame = ({objectName, type}) => {
     const [modalIsOpen, setModalIsOpen] = useState(true);
     const [isGamePlaying, setGameIsPlaying] = useState(false);
 
@@ -77,7 +78,9 @@ const ModalCardGame = ({objectName, classN}) => {
                         <img src='./source/icons/close.svg'></img>
                     </button>
                 </div>
-                {/*<AudagGame/>*/}
+                {/*{render ? <AudagGame gameName={'magic-story'}*/}
+                {/*{!render && <MediaPlayer/>}*/}
+                <AudagGame gameName={'magic-story'}/>
             </Modal>
         </div>
     );

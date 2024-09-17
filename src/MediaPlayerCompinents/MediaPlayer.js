@@ -1,10 +1,14 @@
 import React from 'react'
+import './MediaStyles.css'
 
 const MediaPlayer = () => {
     return (
-    <video className="video-player" controls='controls'>
-        <source src="/public/source/videos/trailer.mp4"/>
-    </video>
+        <div className='video-container'>
+            <video className="video-player" controls='controls'>
+                <source src="./source/videos/olive.mp4"/>
+            </video>
+        </div>
+
     );
 }
 

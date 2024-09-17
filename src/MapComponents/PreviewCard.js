@@ -7,14 +7,15 @@ const PreviewCard = ({ name, type }) => {
 
     return (
         <div className='preview-card-container'>
-            <img src={previewImage} className='game' alt={name} />
-            <div className='overlay'></div> {/* Добавляем overlay элемент */}
-            <div className='center-overlay'>
-                <div className='play-button'>
-                    <img src='./source/icons/play_arrow.svg' alt='Play' />
+
+            <div className='overlay'></div>
+                <img src={previewImage} className='game'/>
+                <div className='center-overlay'>
+                    <button className='play-button'>
+                        <img src='./source/icons/play_arrow.svg' alt='Play' />
+                    </button>
+                    <span className='play-label'>{label}</span>
                 </div>
-                <span className='play-label'>{label}</span>
-            </div>
         </div>
     );
 };

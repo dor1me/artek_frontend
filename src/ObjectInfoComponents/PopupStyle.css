@@ -60,10 +60,9 @@ img {
     flex-direction: column;
     background: linear-gradient(181deg, #10a2d5 2.19%, #156BAE 54.89%);
     max-width: 720px;
-    width: 90%;
+    width: 100%;
     height: 930px;
     max-height: 930px;
-
     position: relative;
     z-index: 10; /* Содержимое поверх изображения */
     border-radius: 28px;
@@ -106,29 +105,37 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     border-radius: 28px;
+    z-index: -3;
     /*backdrop-filter: blur(2px);*/
 }
 
 .game {
-    width: 600px;
+    margin: 40px;
+    position: absolute;
+    width: 90%;
     border-radius: 20px;
     border: 3px solid rgba(255, 255, 255, 0);
     transition: border 0.3s ease-in;
-
+    z-index: -1;
+    bottom: 20px;
+    left: 0px;
+    right: 0px;
+    filter:brightness(80%);
 }
 
 .game:hover {
     cursor: pointer;
     border: 3px solid rgba(255, 255, 255, 0.16);
+    filter:brightness(100%);
 }
 
 .game-button {
     outline: none;
     background: transparent;
     border: none;
-    margin-top: 200px;
+    /*margin-top: 200px;*/
+    /*position: sticky;*/
 }
 
 .modale-div-all {
@@ -138,7 +145,7 @@ img {
     border-radius: 28px;
     display: flex;
     margin-bottom: -5px;
-    padding-right: -40px
+    padding-right: -40px;
 }
 
 .back-img {
@@ -345,11 +352,23 @@ img {
 }
 
 .stairs {
+    opacity: 0.5;
+    scale: 0.5;
     background: none;
     border: none;
     position: absolute;
-    left: 1150px;
-    top: 450px;
+    left: 1140px;
+    top: 370px;
+}
+
+.stairs:hover {
+    opacity: 1;
+    animation: hoverObjectSmall 0.5s forwards;
+}
+
+.stairs:not(hover) {
+    opacity: 1;
+    animation: unhoverObjectSmall 0.5s forwards;
 }
 
 .fortress {
@@ -434,7 +453,9 @@ img {
 }
 
 .media-container {
-    background-color: #4eb543;
+    /*background-color: #4eb543;*/
+    background: linear-gradient(181deg, #10A2D5 2.19%, #156BAE 54.89%);
+    backdrop-filter: blur(14px);
     position: relative;
     max-width: 1655px;
     width: 100%;
@@ -445,4 +466,16 @@ img {
     top: 50%;
     mergin: auto;
     /*left: 50%;*/
+}
+
+.game-preview {
+    position: absolute;
+    top: 40px;
+    filter: brightness(80%);
+}
+
+.game-preview:hover {
+    position: absolute;
+    top: 40px;
+    filter: brightness(100%);
 }

@@ -8,11 +8,14 @@ import Mouse from "./MainComponents/Mouse";
 import ParallaxComponent from "./MainComponents/Parallax";
 import Parallax from "./MainComponents/Parallax";
 import ScrollComponent from "./MainComponents/ScrollComponent";
+import MediaPlayer from "./MediaPlayerCompinents/MediaPlayer";
+import AudagGame from "./Games/AudagGame";
 
 
 function App() {
         return (
     <div className="App">
+        {/*<AudagGame/>*/}
       <MainScreen/>
         {/*<Mouse/>*/}
       {/*  <ModalCard objectName={'artek_arena'}/>*/}
@@ -33,6 +36,7 @@ function App() {
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <ScrollComponent className='footer-scroll'/>
+        {/*<MediaPlayer/>*/}
 
     </div>
   );
