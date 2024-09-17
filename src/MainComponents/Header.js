@@ -9,8 +9,6 @@ const Header = () => {
             <header className={'header'}>
             <span className={'logo-list'}>
                 <img src = './source/logos/artek-logo.png' className={'artek-logo'}/>
-                <img src = './source/logos/vertical-stick.png' className={'stick-logo'}/>
-                <img src = './source/logos/edu-logo.png' className={'edu-logo'}/>
             </span>
                 <ul className={'header-list'}>
                     <li>
@@ -35,11 +33,12 @@ const Header = () => {
                     </li>
                     <li className={'news-item'}>
                             <span>Новости</span>
-                            <span><img src = './source/logos/news-icon.png' className={'news-icon'}/></span>
+
                     </li>
                 </ul>
                 <span className={'contacts'}>
-                    <HeaderContacts/>
+                    <span><img src = './source/logos/news-icon.png' className={'news-icon'}/></span>
+                    {/*<HeaderContacts/>*/}
                 </span>
             </header>
         </div>

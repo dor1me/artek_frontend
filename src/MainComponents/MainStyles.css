@@ -14,7 +14,7 @@
 }
 
 .header {
-    gap: 100px;
+    margin-right: auto;
     margin: 20px 96px 20px 96px;
     font-size: 18px;
     font-weight: 500;
@@ -35,7 +35,10 @@
 }
 
 .header-list {
-    gap: 23px;
+    gap: 36px;
+    text-align: center;
+    padding: 0;
+    width: 1500px;
 }
 
 /*.header ul:last-child {*/
@@ -121,6 +124,7 @@ body {
 .artek-logo {
     width: 110px;
     height: 83px;
+    /*margin-right: 150px;*/
 }
 
 .edu-logo {
@@ -183,10 +187,11 @@ span {
 
 .contacts {
     display: flex;
-    width: 214px;
+    /*width: 214px;*/
     flex-direction: column;
     align-items: flex-start;
-    row-gap: 30px;
+    /*row-gap: 30px;*/
+    margin-left: 450px;
 }
 
 .email {

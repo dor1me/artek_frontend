@@ -168,8 +168,8 @@ const ImageSwitcher = () => {
         const { clientX } = event; // Получаем горизонтальную позицию курсора
         const width = window.innerWidth; // Ширина окна браузера
         const fraction = clientX / width; // Доля ширины окна, занятого курсором
-        const index = Math.floor(fraction * images.length); // Вычисляем индекс изображения
-        setImageIndex(index); // Обновляем состояние с новым индексом
+        const imageIndex = Math.floor(fraction * images.length); // Вычисляем индекс изображения
+        setImageIndex(imageIndex); // Обновляем состояние с новым индексом
     };
 
     // Используем эффект для добавления и удаления обработчика события

@@ -6,12 +6,19 @@ import {MailIcon} from "../Icons/MailIcon"; // Подключаем стили
 const Scroll = () => {
     return (
         <div className={'container'}>
-            <span className='base-container'>
+            {/*<div className='img1'></div>*/}
+
+            <div className='divs' id='stop1'>
+                <div className='row'>
+                    <div className='col-xs-8'>
+
+                        <p>
+                            <span className='base-container'>
             <span className={'logo-list'}>
                     <img src = './source/logos/artek-logo.png' className={'artek-logo'}/>
                     <img src = './source/logos/vertical-stick.png' className={'stick-logo'}/>
                     <img src = './source/logos/edu-logo.png' className={'edu-logo'}/>
-                </span>
+            </span>
             <div className='base-info-container'>
                 <span className={'address'}>
                     <img src = './source/icons/point.svg' className={'point-icon'}/>
@@ -33,19 +40,25 @@ const Scroll = () => {
                         <img src='./source/icons/mail-icon.svg' className={'mail-icon'}/>
                         <span className={'mail'}>center@artek.org</span>
                 </span>
-
             </div>
             <span>
-                
+            <span className={'social-list'}>
+                    <img src = './source/icons/socials.svg' className={'social-icon'}/>
+
             </span>
             </span>
 
-            {/*<div className='img1'></div>*/}
+            </span>
+                <div className='dop-info'>
+                    <img src='./source/icons/Line.svg' className='line-icon'/>
+                    <ul>
+                        <li><span className='footer-span'>Ⓒ «Артек», 2024</span></li>
+                        <li><span className='footer-span'>Политика конфиденциальности</span></li>
+                        <li> <span className='footer-span'>Разработано</span> <span>АНО «АртМастерс»</span></li>
+                    </ul>
+                </div>
 
-            <div className='divs' id='stop1'>
-                <div className='row'>
-                    <div className='col-xs-8'>
-                        <p>футерфутерфутерфутерфутерфутерфутерфутерфутерфутерфутерфутерфутерфутерфутерфутерфутерфутерфутер</p>
+                        </p>
                     </div>
                 </div>
             </div>
