@@ -113,13 +113,16 @@ const ModalCard = ({objectName, classN }) => {
     const commonStyles = {
         content: {
             // backgroundColor: 'white',
-            margin: '0px 0px 135px 0px',
+            margin: '0px 0px 0px 0px',
+
             top: '30px',
             borderRadius: '8px',
-            padding: '20px',
-            maxWidth: '1655px',
-            minWidth: '1655px',
-
+            padding: '0px',
+            maxWidth: '1920px',
+            minWidth: '1920px',
+            maxHeight: '930px',
+            alignContent: 'center',
+            justifyContent: 'center',
             overflow: 'hidden',
         },
         overlay: {
