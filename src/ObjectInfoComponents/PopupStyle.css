@@ -146,6 +146,7 @@ img {
     display: flex;
     margin-bottom: -5px;
     padding-right: -40px;
+    justify-content: space-between;
 }
 
 .back-img {
@@ -161,11 +162,18 @@ img {
 }
 
 .div-close-btn {
-    width: 100%;
-    display: flex;
-    position: absolute;
+    position: relative;
+    justify-content: flex-end;
+    /*top: 40px;*/
+    /*right: -80px;*/
 }
 
+.game-close-btn {
+    position: relative;
+    justify-content: flex-end;
+    top: -10px;
+    right: 50px;
+}
 
 .modal-overlay {
     background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
@@ -180,13 +188,12 @@ img {
 }
 
 .modal-content {
-    left: 125px;
-    position: fixed; /* Fix the position of the modal */
-    border: none;
-    width: 100%;
-    z-index: 1001; /* Ensure it is above the overlay */
-    align-content: center;
-    justify-content: center;
+    z-index: 1001;
+    /* align-content: center; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .modal-game {

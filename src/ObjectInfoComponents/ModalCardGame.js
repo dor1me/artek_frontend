@@ -73,19 +73,17 @@ const ModalCardGame = ({objectName, type}) => {
                 className='modal-content'    // Используйте CSS класс для контента модального окна
                 overlayClassName='modal-overlay'
             >
-                <div className='div-close-btn'>
+                {
+                    type==='game'
+                        ?<AudagGame gameName={'magic-story'}/>
+                        :<MediaPlayer/>
+                }
+                <div className='game-close-btn'>
                     <button onClick={closeModal} className={'close-button'}>
                         <img src='./source/icons/close.svg'></img>
                     </button>
                 </div>
-                {
-                    type==='game'
-                        ?<AudagGame gameName={'magic-story'}/>
-                        :<MediaPlayer/>}
-                }
-                {/*/!*{render ? <AudagGame gameName={'magic-story'}*!/*/}
-                {/*/!*{!render && <MediaPlayer/>}*!/*/}
-                {/*<AudagGame gameName={'magic-story'}/>*/}
+
             </Modal>
         </div>
     );

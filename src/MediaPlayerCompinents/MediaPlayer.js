@@ -4,7 +4,7 @@ import './MediaStyles.css'
 const MediaPlayer = () => {
     return (
         <div className='video-container'>
-            <video className="video-player" controls='controls'>
+            <video className="video-player" controls='controls' autoPlay={true}>
                 <source src="./source/videos/olive.mp4"/>
             </video>
         </div>

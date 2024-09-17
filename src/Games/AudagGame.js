@@ -10,10 +10,15 @@ function AudagGame({gameName}) {
         codeUrl: `./unity/Build/magic-story.wasm`,
     });
 
-    return <Unity
-        unityProvider={unityProvider}
-        style={{height: 930}}
-    />;
+    return (
+        <div style={{width:1366}}>
+            <Unity
+                unityProvider={unityProvider}
+                style={{height: 768, width: 1366}}
+            />
+        </div>
+    );
+
 }
 
 export default AudagGame;
