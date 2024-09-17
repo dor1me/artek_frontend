@@ -5,7 +5,7 @@ import Parallax from './Parallax';
 
 const MainScreen = () => {
     return (
-        <div className={'header-container'}>
+        <div className='header-container'>
             <Header/>
         </div>
     )

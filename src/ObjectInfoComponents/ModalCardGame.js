@@ -78,9 +78,14 @@ const ModalCardGame = ({objectName, type}) => {
                         <img src='./source/icons/close.svg'></img>
                     </button>
                 </div>
-                {/*{render ? <AudagGame gameName={'magic-story'}*/}
-                {/*{!render && <MediaPlayer/>}*/}
-                <AudagGame gameName={'magic-story'}/>
+                {
+                    type==='game'
+                        ?<AudagGame gameName={'magic-story'}/>
+                        :<MediaPlayer/>}
+                }
+                {/*/!*{render ? <AudagGame gameName={'magic-story'}*!/*/}
+                {/*/!*{!render && <MediaPlayer/>}*!/*/}
+                {/*<AudagGame gameName={'magic-story'}/>*/}
             </Modal>
         </div>
     );

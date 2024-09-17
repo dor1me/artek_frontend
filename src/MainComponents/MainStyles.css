@@ -14,16 +14,17 @@
 }
 
 .header {
-    /*margin-right: auto;*/
-    margin: 20px 96px 20px 96px;
     font-size: 18px;
     font-weight: 500;
     color: var(--stroke-white, #FFF);
     text-align: center;
     font-style: normal;
     line-height: normal;
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    width: 1920px;
+    margin: auto;
+    padding: 20px;
 }
 
 .header ul {
@@ -140,7 +141,7 @@ body {
     display: inline-flex;
 }
 .news-icon{
-    margin-left: -400px;
+    padding: 10px;
 }
 
 .stick-logo {
@@ -186,12 +187,7 @@ span {
 }
 
 .contacts {
-    display: flex;
-    /*width: 214px;*/
-    flex-direction: column;
-    align-items: flex-start;
-    /*row-gap: 30px;*/
-    margin-left: 450px;
+
 }
 
 .email {
@@ -205,8 +201,8 @@ span {
 }
 
 .header-container {
-    position: fixed;
     z-index: 0;
+    width: 100%;
 }
 
 .changer-container {

@@ -6,7 +6,7 @@ import HeaderContacts from "./HeaderContacts";
 const Header = () => {
     return (
         <div className={'header-container'}>
-            <header className={'header'}>
+            <div className={'header'}>
             <span className={'logo-list'}>
                 <img src = './source/logos/artek-logo.png' className={'artek-logo'}/>
             </span>
@@ -40,7 +40,7 @@ const Header = () => {
                     <span><img src = './source/logos/news-icon.png' className={'news-icon'}/></span>
                     {/*<HeaderContacts/>*/}
                 </span>
-            </header>
+            </div>
         </div>
     )
 }
