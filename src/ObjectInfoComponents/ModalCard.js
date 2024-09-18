@@ -207,7 +207,7 @@ function showlabel(label) {
 
 
                 {isGamePlaying
-                    ? <ModalCardGame type={objectInfo[objectName].type}/>
+                    ? <ModalCardGame type={objectInfo[objectName].type} onClose={() => setGameIsPlaying(false)}/>
                     : modalContent
                 }
             </Modal>

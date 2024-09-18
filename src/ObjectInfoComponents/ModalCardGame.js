@@ -6,7 +6,7 @@ import AudagGame from "../Games/AudagGame";
 import MediaPlayer from "../MediaPlayerCompinents/MediaPlayer";
 
 
-const ModalCardGame = ({objectName, type}) => {
+const ModalCardGame = ({objectName, type, onClose}) => {
     const [modalIsOpen, setModalIsOpen] = useState(true);
     const [isGamePlaying, setGameIsPlaying] = useState(false);
 
@@ -16,7 +16,7 @@ const ModalCardGame = ({objectName, type}) => {
 
     const closeModal = () => {
         setModalIsOpen(false);
-        setGameIsPlaying(false);
+        onClose();
     };
 
     const customStyles = {
