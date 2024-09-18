@@ -30,6 +30,7 @@ const Intro = () => {
     const handleFinished = () => {
         console.log("finished");
         setFinished(true);
+        document.getElementById("root").className = "started";
     }
 
     const handleOpacity = (value) => {

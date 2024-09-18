@@ -356,7 +356,7 @@ img {
     top: 435px;
 }
 
-.arena:hover {
+.started .arena:hover {
     opacity: 1;
     animation: hoverObjectBig 0.5s forwards;
 }
@@ -366,7 +366,7 @@ img {
     animation: unhoverObjectBig 0.5s forwards;
 }
 
-.suuk {
+.started .suuk {
     opacity: 0.5;
     scale: 0.50;
     background: none;
@@ -376,7 +376,7 @@ img {
     top: 455px;
 }
 
-.suuk:hover {
+.started .suuk:hover {
     opacity: 1;
     animation: hoverObjectSmall 0.5s forwards;
 }
@@ -386,7 +386,7 @@ img {
     animation: unhoverObjectSmall 0.5s forwards;
 }
 
-.school {
+.started .school {
     opacity: 0.5;
     scale: 0.50;
     background: none;
@@ -396,7 +396,7 @@ img {
     top: 232px;
 }
 
-.school:hover {
+.started .school:hover {
     opacity: 1;
     animation: hoverObjectBig 0.5s forwards;
 }
@@ -417,7 +417,7 @@ img {
     top: 515px;
 }
 
-.monument:hover {
+.started .monument:hover {
     opacity: 1;
     animation: hoverObjectSmall 0.5s forwards;
 }
@@ -436,7 +436,7 @@ img {
     top: -60px;
 }
 
-.audag:hover {
+.started .audag:hover {
     opacity: 1;
     animation: hoverObjectAudag 0.5s forwards;
 }
@@ -456,7 +456,7 @@ img {
     top: 320px;
 }
 
-.stadium:hover {
+.started .stadium:hover {
     opacity: 1;
     animation: hoverObjectBig 0.5s forwards;
 }
@@ -476,7 +476,7 @@ img {
     top: 390px;
 }
 
-.stairs:hover {
+.started .stairs:hover {
     opacity: 1;
     animation: hoverObjectSmall 0.5s forwards;
 }
@@ -496,7 +496,7 @@ img {
     top: 520px;
 }
 
-.fortress:hover {
+.started .fortress:hover {
     opacity: 1;
     animation: hoverObjectSmall 0.5s forwards;
 }
@@ -516,7 +516,7 @@ img {
     top: 417px;
 }
 
-.olive:hover {
+.started .olive:hover {
     opacity: 1;
     animation: hoverObjectSmall 0.5s forwards;
 }
@@ -535,7 +535,7 @@ img {
     top: 539px;
 }
 
-.cafe:hover{
+.started .cafe:hover{
     opacity: 1;
     animation: hoverObjectSmall 0.5s forwards;
 }
