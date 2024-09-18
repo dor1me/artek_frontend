@@ -70,6 +70,7 @@ img {
     padding: 40px 40px 40px 40px;
     box-sizing: border-box;
     justify-content: space-between;
+    outline: none;
 }
 
 .header-text {
