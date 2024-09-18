@@ -1,21 +1,22 @@
 import React from 'react';
 import './MapStyles.css';
 
-const PreviewCard = ({ name, type }) => {
+const PreviewCard = ({ name, type, handlePlay }) => {
     const previewImage = `./source/previews/${name}.jpg`;
     const label = (type === 'game') ? 'Играть' : 'Смотреть';
 
     return (
         <div className='preview-card-container'>
+            <img src={previewImage} className='game'/>
+            <div className='preview-play-box'>
 
-            <div className='overlay'></div>
-                <img src={previewImage} className='game'/>
-                <div className='center-overlay'>
-                    <button className='play-button'>
-                        <img src='./source/icons/play_arrow.svg' alt='Play' />
+                    <button className='preview-play-button' onClick={handlePlay}>
+                        <img src='./source/icons/play_arrow.svg' alt='Play' width={576} height={319}/>
                     </button>
-                    <span className='play-label'>{label}</span>
-                </div>
+
+                    <div className='preview-play-label'>{label}</div>
+
+            </div>
         </div>
     );
 };

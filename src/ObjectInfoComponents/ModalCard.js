@@ -169,12 +169,13 @@ function showlabel(label) {
                 <div className='module-game'>
                     <p className='description-product-text'>{objectInfo[objectName].game}</p>
 
-                    <button className='game-button' onClick={() => {
-                        setGameIsPlaying(true);
-                    }}>
-                        <PreviewCard name={objectName} type={(objectInfo[objectName].type).toString()} className='game-preview'/>
-                        <img src={previewImage} className='game'/>
-                    </button>
+                    {/*<button className='game-button' onClick={() => {*/}
+                    {/*    setGameIsPlaying(true);*/}
+                    {/*}}></button>*/}
+
+                    <PreviewCard name={objectName} type={(objectInfo[objectName].type).toString()} handlePlay={() => {setGameIsPlaying(true);}} className='game-preview'/>
+                    {/*<img src={previewImage} className='game'/>*/}
+
                 </div>
                 <img src='./source/waves/wave_1.svg' className='wave-1'/>
                 <img src='./source/waves/wave_2.svg' className='wave-2'/>
@@ -203,9 +204,12 @@ function showlabel(label) {
                 className='modal-content'
                 overlayClassName='modal-overlay'
             >
-                {isGamePlaying ? <ModalCardGame type={objectInfo[objectName].type}/> : modalContent}
-                {/*{!isGamePlaying ? modalContent : <ModalCardGame type={objectInfo[objectName].type}/>}*/}
 
+
+                {isGamePlaying
+                    ? <ModalCardGame type={objectInfo[objectName].type}/>
+                    : modalContent
+                }
             </Modal>
         </div>
     );

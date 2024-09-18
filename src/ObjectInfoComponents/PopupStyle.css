@@ -67,7 +67,9 @@ img {
     z-index: 10; /* Содержимое поверх изображения */
     border-radius: 28px;
     overflow: hidden;
-    padding: 40px 40px 0px 40px;
+    padding: 40px 40px 40px 40px;
+    box-sizing: border-box;
+    justify-content: space-between;
 }
 
 .header-text {
@@ -101,18 +103,63 @@ img {
     line-height: 140%; /* 33.6px */
 }
 
+.preview-play-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.16);
+    background: linear-gradient(90deg, #F8A90C 0%, #E54A3F 100%);
+    background-clip: padding-box;
+    overflow: hidden;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.preview-play-button:hover {
+    border-radius: 50%;
+    border: 2px solid rgba(203, 124, 31, 0.89);
+    /*background: linear-gradient(90deg, #F8A90C 0%, #E54A3F 100%);*/
+    /*background-clip: padding-box;*/
+    /*width: 40px;*/
+    /*height: 40px;*/
+    /*margin-right: 20px;*/
+    /*margin-top: 20px;*/
+    /*margin-left: auto;*/
+    transition: background 0.3s ease-in;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*overflow: hidden;*/
+    /*background: rgba(33, 33, 33, 0.7);*/
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), linear-gradient(90deg, rgba(218, 154, 26, 0.81) 0%, #E54A3F 100%);
+    /*background-clip: padding-box;*/
+    /*overflow: hidden;*/
+}
+
+.preview-play-label {
+    font-size: 24px;
+    padding: 10px;
+    margin: 0 auto;
+}
 .module-game {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     border-radius: 28px;
     z-index: -3;
-    /*backdrop-filter: blur(2px);*/
+    /* backdrop-filter: blur(2px); */
+    flex-direction: column;
+    height: 100%;
 }
 
 .game {
     margin: 40px;
-    position: absolute;
+    /*position: absolute;*/
     width: 90%;
     border-radius: 20px;
     border: 3px solid rgba(255, 255, 255, 0);
@@ -144,9 +191,10 @@ img {
     width: 90%;
     border-radius: 28px;
     display: flex;
-    margin-bottom: -5px;
+    /* margin-bottom: -5px; */
     padding-right: -40px;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .back-img {

@@ -30,41 +30,6 @@ const ModalCardGame = ({objectName, type}) => {
         },
     };
 
-    const modalContent = (
-        <div className='modale-div-all'>
-            <img
-                className='back-img'
-                src='./source/object_card_images/artek_arena.png'
-                alt='background'></img>
-            <div className='modal-div'>
-                <div className='modal-window-header'>
-                    <h1 className='header-text'></h1>
-                    <div className='description-top'>
-                        <p className='description-text-top'>Год постройки · </p>
-
-                    </div>
-
-
-                    <p className='description-text'>Год постройки · </p>
-
-                </div>
-
-                <div className='module-game'>
-                    <button className='game-button'
-                            onClick={()=>setGameIsPlaying(true)}>
-                        <img src='./source/previews/audag_peview.jpg' className='game'/>
-                    </button>
-                </div>
-
-            </div>
-            <div className='div-close-btn'>
-                <button onClick={closeModal} className={'close-button'}>
-                    <img src='./source/icons/close.svg'></img>
-                </button>
-            </div>
-        </div>
-
-    );
     return (
         <div className={'modal-window'}>
             <Modal
