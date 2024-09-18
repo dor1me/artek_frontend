@@ -16,6 +16,7 @@ const ModalCardGame = ({objectName, type}) => {
 
     const closeModal = () => {
         setModalIsOpen(false);
+        setGameIsPlaying(false);
     };
 
     const customStyles = {
@@ -75,8 +76,8 @@ const ModalCardGame = ({objectName, type}) => {
             >
                 {
                     type==='game'
-                        ?<AudagGame gameName={'magic-story'}/>
-                        :<MediaPlayer/>
+                        ?<AudagGame gameName={objectName}/>
+                        :<MediaPlayer name={objectName}/>
                 }
                 <div className='game-close-btn'>
                     <button onClick={closeModal} className={'close-button'}>

@@ -2,3 +2,16 @@
     width: 50%;
     height: 50%;
 }
+
+.mini-label {
+    color: black;
+    font-size: 40px;
+    padding: 10px 16px 10px 16px;
+    background-color: white;
+    border-radius: 100px;
+    position: absolute;
+    top: -70px;
+    left: 200px;
+    white-space: nowrap;
+    border: 2px solid rgba(0, 0, 0, 0.16);
+}

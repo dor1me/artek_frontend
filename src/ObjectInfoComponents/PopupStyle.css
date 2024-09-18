@@ -262,6 +262,7 @@ img {
         transform: scale(1.1);
     }
 }
+
 @keyframes unhoverObjectBig {
     from{
         opacity: 1;
@@ -273,22 +274,56 @@ img {
     }
 }
 
+@keyframes hoverObjectAudag {
+    from{
+        opacity: 0.9;
+        transform: scale(1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1.1);
+        /*transform: translateX(-20px)*/
+    }
+}
+
+@keyframes unhoverObjectAudag {
+    from{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
 .arena {
+    opacity: 0.5;
+    scale: 0.50;
     background: none;
     border: none;
     position: absolute;
-    left: 900px;
-    top: 550px;
+    left: 795px;
+    top: 435px;
+}
+
+.arena:hover {
+    opacity: 1;
+    animation: hoverObjectBig 0.5s forwards;
+}
+
+.arena:not(hover) {
+    opacity: 1;
+    animation: unhoverObjectBig 0.5s forwards;
 }
 
 .suuk {
-    opacity: 0;
+    opacity: 0.5;
     scale: 0.50;
     background: none;
     border: none;
     position: absolute;
     left: 633px;
-    top: 435px;
+    top: 455px;
 }
 
 .suuk:hover {
@@ -302,7 +337,7 @@ img {
 }
 
 .school {
-    opacity: 0;
+    opacity: 0.5;
     scale: 0.50;
     background: none;
     border: none;
@@ -323,19 +358,42 @@ img {
 
 
 .monument {
+    opacity: 0.5;
+    scale: 0.5;
     background: none;
     border: none;
     position: absolute;
-    left: 1100px;
-    top: 600px;
+    left: 1020px;
+    top: 515px;
+}
+
+.monument:hover {
+    opacity: 1;
+    animation: hoverObjectSmall 0.5s forwards;
+}
+
+.monument:not(hover) {
+    animation: unhoverObjectSmall 0.5s forwards;
 }
 
 .audag {
+    scale: 0.5;
+    opacity: 0;
     background: none;
     border: none;
     position: absolute;
-    left: 1550px;
-    top: 400px;
+    left: 1060px;
+    top: -60px;
+}
+
+.audag:hover {
+    opacity: 1;
+    animation: hoverObjectAudag 0.5s forwards;
+}
+
+.audag:not(hover) {
+    opacity: 1;
+    animation: unhoverObjectAudag 0.5s forwards;
 }
 
 .stadium {
@@ -344,8 +402,8 @@ img {
     background: none;
     border: none;
     position: absolute;
-    left: 780px;
-    top: 340px;
+    left: 765px;
+    top: 320px;
 }
 
 .stadium:hover {
@@ -364,8 +422,8 @@ img {
     background: none;
     border: none;
     position: absolute;
-    left: 1140px;
-    top: 370px;
+    left: 1162px;
+    top: 390px;
 }
 
 .stairs:hover {
@@ -379,13 +437,13 @@ img {
 }
 
 .fortress {
-    opacity: 0;
+    opacity: 0.5;
     scale: 0.5;
     background: none;
     border: none;
     position: absolute;
-    left: 171px;
-    top: 547px;
+    left: 168px;
+    top: 520px;
 }
 
 .fortress:hover {
@@ -399,21 +457,32 @@ img {
 }
 
 .olive {
+    scale: 0.5;
+    opacity: 0;
     background: none;
     border: none;
     position: absolute;
-    left: 1130px;
-    top: 500px;
+    left: 1056px;
+    top: 417px;
+}
+
+.olive:hover {
+    opacity: 1;
+    animation: hoverObjectSmall 0.5s forwards;
+}
+
+.olive:not(hover) {
+    animation: unhoverObjectSmall 0.5s forwards;
 }
 
 .cafe {
-    opacity: 0;
+    opacity: 1;
     scale: 0.5;
     background: none;
     border: none;
     position: absolute;
-    left: 423px;
-    top: 504px;
+    left: 453px;
+    top: 539px;
 }
 
 .cafe:hover{

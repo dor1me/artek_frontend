@@ -5,6 +5,7 @@ import AudagGame from '../Games/AudagGame';
 import './PopupStyle.css';
 import {CardWave1} from "../Waves/FooterWave";
 import PreviewCard from "../MapComponents/PreviewCard";
+import MiniImageLabel from "./MiniImageLabel";
 
 const ModalCard = ({objectName, classN }) => {
     const objectInfo = {
@@ -12,7 +13,7 @@ const ModalCard = ({objectName, classN }) => {
             name: 'АРТЕК АРЕНА',
             description: 'Если ваши друзья в разных лагерях — это не страшно, ведь на самых главных событиях смены вас объединит Артек Арена!',
             year: '1963',
-            address: 'пгт. Гурзуф и тп',
+            address: 'пгт. Гурзуф',
             type: 'game',
             game: 'Попробуйте сыграть в нашу увлекательную игру и познакомьтесь ближе с историей Артека!'
         },
@@ -22,7 +23,7 @@ const ModalCard = ({objectName, classN }) => {
             year: '1903',
             address: 'пгт. Гурзуф',
             type: 'video',
-            game: 'Попробуйте сыграть в нашу увлекательную игру и познакомьтесь ближе с историей Артека!'
+            game: 'Посмотрите клип "Сердце Артека!"'
         },
         school: {
             name: 'ШКОЛА АРТЕКА',
@@ -38,7 +39,7 @@ const ModalCard = ({objectName, classN }) => {
             year: '1967',
             address: 'пгт. Гурзуф',
             type: 'video',
-            game: 'Попробуйте сыграть в нашу увлекательную игру и познакомьтесь ближе с историей Артека!'
+            game: 'Посмотрите наш яркий анимационный фильм про легенды Артека!'
         },
         stadium: {
             name: 'ЦЕНТРАЛЬНЫЙ СТАДИОН',
@@ -62,7 +63,7 @@ const ModalCard = ({objectName, classN }) => {
             year: '1967',
             address: 'пгт. Гурзуф',
             type: 'video',
-            game: 'Попробуйте сыграть в нашу увлекательную игру и познакомьтесь ближе с историей Артека!'
+            game: 'Посмотрите наш яркий анимационный фильм про легенды Артека!'
         },
         fortress: {
             name: 'ГЕНУЭЗСКАЯ КРЕПОСТЬ',
@@ -78,7 +79,7 @@ const ModalCard = ({objectName, classN }) => {
             year: '1808',
             address: 'пгт. Гурзуф',
             type: 'video',
-            game: 'Попробуйте сыграть в нашу увлекательную игру и познакомьтесь ближе с историей Артека!'
+            game: 'Посмотрите наш яркий анимационный фильм про легенды Артека!'
         },
         cafe: {
             name: 'СТОЛОВАЯ',
@@ -94,11 +95,14 @@ const ModalCard = ({objectName, classN }) => {
     const [isGamePlaying, setGameIsPlaying] = useState(false);
     const [isSecondModalOpen, setSecondModalIsOpen] = useState(false);
 
-    const closeGame = () => setGameIsPlaying(false);
+    const closeGame = () => {
+        setGameIsPlaying(false);
+    };
     const openModal = () => setModalIsOpen(true);
     const closeModal = () => setModalIsOpen(false);
     const openSecondModal = () => setSecondModalIsOpen(true);
     const closeSecondModal = () => setSecondModalIsOpen(false);
+
 
 
 
@@ -115,6 +119,11 @@ const ModalCard = ({objectName, classN }) => {
         );
     }
 
+function showlabel(label) {
+        return (
+            <MiniImageLabel label={label}/>
+        )
+};
 
     const commonStyles = {
         content: {
@@ -138,7 +147,7 @@ const ModalCard = ({objectName, classN }) => {
 
     const backgroundImage = `./source/object_card_images/${objectName}.png`
     const previewImage = `./source/previews/${objectName}.jpg`
-    const miniImage = `./source/object_images/${objectName}.svg`
+    const miniImage = `./source/object_images/${objectName}.png`
 
     const modalContent = (
         <div className='modale-div-all'>
@@ -181,8 +190,11 @@ const ModalCard = ({objectName, classN }) => {
 
     return (
         <div className='modal-window'>
-            <button onClick={openModal} className={classN}>
+            <button onClick={openModal} className={classN}
+                    onMouseEnter={() => showlabel(objectInfo[objectName].name)}
+            >
                 <img src={miniImage}/>
+                <MiniImageLabel label={(objectInfo[objectName].name)}/>
             </button>
             <Modal
                 isOpen={modalIsOpen}
@@ -192,6 +204,8 @@ const ModalCard = ({objectName, classN }) => {
                 overlayClassName='modal-overlay'
             >
                 {isGamePlaying ? <ModalCardGame type={objectInfo[objectName].type}/> : modalContent}
+                {/*{!isGamePlaying ? modalContent : <ModalCardGame type={objectInfo[objectName].type}/>}*/}
+
             </Modal>
         </div>
     );

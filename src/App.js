@@ -10,10 +10,12 @@ import Parallax from "./MainComponents/Parallax";
 import ScrollComponent from "./MainComponents/ScrollComponent";
 import MediaPlayer from "./MediaPlayerCompinents/MediaPlayer";
 import AudagGame from "./Games/AudagGame";
+import Intro from "./Intro/Intro";
 
 
 function App() {
         return (<>
+                <Intro/>
             <div className='container-map'>
                 <ImageSwitcher/>
                 <ModalCard objectName={'artek_arena'} classN={'arena'}/>
