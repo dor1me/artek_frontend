@@ -2,6 +2,7 @@ import { createContext, useState } from "react";
 import IntroLogo from "./IntroLogo";
 import IntroStartButton from "./IntroStartButton";
 import IntroPlayer from "./IntroPlayer";
+// import
 
 const introStyle = {
     width: "100%",
@@ -45,9 +46,9 @@ const Intro = () => {
                 onFinish: handleFinished,
                 setOpacity: handleOpacity
             }}>
-            <IntroLogo></IntroLogo>
-            <IntroStartButton></IntroStartButton>
-            <IntroPlayer></IntroPlayer>
+            <IntroLogo/>
+            <IntroStartButton/>
+            <IntroPlayer/>
         </IntroContext.Provider>
         
     </div>

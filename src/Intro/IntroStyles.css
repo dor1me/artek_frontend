@@ -1,0 +1,17 @@
+button {
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    border: none;
+    background: linear-gradient(90deg, #FAB009 0%, #E54940 100%);
+}
+
+button img {
+    margin-top: 2px;
+}
+
+button:hover {
+    cursor: pointer;
+}

@@ -9,7 +9,8 @@ const playerStyle = {
     top: 0,
     //backgroundColor: "blue",
     //opacity: 0.5,
-    overflow: "hidden"
+    overflow: "hidden",
+    // background: 'transparent'
     
 }
 
@@ -58,7 +59,7 @@ const IntroPlayer = () => {
     
     return ctx.started && (
         <div style={playerStyle} ref={playerRef}>
-            <video src='/intro.mp4' width={"100%"} autoPlay={true} onEnded={ctx.onFinish} onPlay={handlePlay}>
+            <video src='/intro.webm' width={"100%"} autoPlay={true} onEnded={ctx.onFinish} onPlay={handlePlay}>
 
             </video>
         </div>
