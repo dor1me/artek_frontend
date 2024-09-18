@@ -44,7 +44,6 @@ const IntroPlayer = () => {
     }
     const handleFinish = (ev) => {
         console.log("finished");
-        ctx.onFinish();
     }
 
     if(playerRef.current) {
@@ -54,12 +53,13 @@ const IntroPlayer = () => {
             ?1
             :(duration-count)/transition;
         playerRef.current.style.opacity = opacity;
+        if(opacity <= 0 ) ctx.onFinish();
     }
     
     
     return ctx.started && (
         <div style={playerStyle} ref={playerRef}>
-            <video src='/intro.webm' width={"100%"} autoPlay={true} onEnded={ctx.onFinish} onPlay={handlePlay}>
+            <video src='/intro.webm' width={"100%"} autoPlay={true} onPlay={handlePlay}>
 
             </video>
         </div>
