@@ -243,6 +243,7 @@ img {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    outline: none;
 }
 
 .modal-game {
