@@ -1,4 +1,4 @@
-button {
+.intro button {
     font-size: 20px;
     display: flex;
     gap: 10px;
@@ -8,10 +8,10 @@ button {
     background: linear-gradient(90deg, #FAB009 0%, #E54940 100%);
 }
 
-button img {
+.intro button img {
     margin-top: 2px;
 }
 
-button:hover {
+.intro button:hover {
     cursor: pointer;
 }

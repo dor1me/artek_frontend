@@ -37,7 +37,7 @@ const Intro = () => {
     }
 
 
-    return finished==false && <div style={introStyle}>
+    return finished==false && <div className={"intro"} style={introStyle}>
         <IntroContext.Provider value={
             { 
                 started: started,
