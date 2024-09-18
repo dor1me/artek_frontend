@@ -7,11 +7,11 @@ const PreviewCard = ({ name, type, handlePlay }) => {
 
     return (
         <div className='preview-card-container'>
-            <img src={previewImage} className='game'/>
+            <img src={previewImage} className='game'  width={576} height={319}/>
             <div className='preview-play-box'>
 
                     <button className='preview-play-button' onClick={handlePlay}>
-                        <img src='./source/icons/play_arrow.svg' alt='Play' width={576} height={319}/>
+                        <img src='./source/icons/play_arrow.svg' alt='Play'/>
                     </button>
 
                     <div className='preview-play-label'>{label}</div>
